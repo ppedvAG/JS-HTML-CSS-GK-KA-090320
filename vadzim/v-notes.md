@@ -17,11 +17,15 @@
 | shortcut | effect |
 | --- | --- |
 | `ctrl ö` | open terminal |
+| `ctrl space` | force intellisense |
 | `shift alt a` | comment / uncomment |
 | `ctrl #` | comment / uncomment |
+| `shift alt f` | format |
+| `ctrl k s` | save all |
+| `shift alt cursor` | edit many lines |
+| `alt b` | open in browser |
 | `shift alt up/down` | duplicate line / selection |
 | `ctrl c ctrl v` | duplicate line |
-| `shift alt f` | format |
 | `f12` | go to definition |
 | `ctrl +` | zoom in |
 | `ctrl -` | zoom out |
