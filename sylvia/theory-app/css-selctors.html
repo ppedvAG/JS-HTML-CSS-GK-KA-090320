@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS SELECTORs</title>
+    <style>
+        /* Kommentar in CSS  */
+        /* Universalselektor */
+        /* mit * wird selektiert - alles html und body */
+        * {
+           border: thin solid; 
+        }
+        /* Typselektor */
+        /* alle div's werden selektiert */
+        div {
+           text-decoration: underline;
+        }
+        
+        /* ID-Selector */
+        /* alle id's werden selektiert */
+        #myH2 {
+            font-style: italic;
+        }
+
+        /* Class-Selector */
+        /* alle class's werden selektiert */
+        .borderClass {
+            background-color:purple; 
+        }
+        
+        /* s.u. html und body wird markiert was selektiert ist */
+        /* Kombinatoren - kombinierte Selektoren = Auflistung */
+        html, body {
+            border: thick dotted pink
+        }
+
+        /* unittelbare Geschwister */
+        /* alle p's, die zu h2 gehören */
+        h2+p {
+            font-weight: 900;
+        }
+
+        /* Vorfahr-Nachfahr-Selektor */
+        .borderClass div {
+            color:yellowgreen;
+        }
+
+        /* Eltern-Kind-Selektor */
+        .borderClass > div {
+            text-decoration: line-through;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- Kommentar in HTML  -->
+    
+        <h1>heading 1</h1>
+        <h1>heading 1</h1>
+        
+        <h2>heading 2</h2>
+        <h2 id='myh2'>heading 2</h2>
+
+    <p>paragraph</p>
+
+    <!-- div.borderClass{div ebene1}>div{div ebene2}>div{div ebene3} -->
+    <div class="borderClass">
+        div ebene1
+        <div>
+            div ebene2
+            <div>div ebene3</div>
+        </div>
+    </div>
+
+    <div class="borderClass">
+        div ebene1
+        <div>
+            div ebene2
+            <div>div ebene3</div>
+        </div>
+    </div>
+
+</body>
+</html>

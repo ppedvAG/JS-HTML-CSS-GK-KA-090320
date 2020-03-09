@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Units</title>
+<style>
+    div {
+        border: medium solid lightblue;
+    }
+    #pixel{
+        /* div hat keinen Text als Inhalt, die Schriftgröße wird an p angewendet */
+        /* Überschrift muss größer sein als Paragraph, daher macht er autom. um 50% grösser */
+        font-size: 10px;
+        /*  */
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #prozent{
+        /* 10% von 20px (von body= Eltern-Element)  */
+        font-size: 10%;
+        /* breite von Eltern-Element */
+        padding: 10%;
+        /* 10% von y-Achse (von Seitenlänge) */
+        border-radius: 10%;
+
+    }
+
+
+
+    body{
+        font-size: 20px;
+        /* dadurch ist ein em 20px groß, sonst wird default = 16px genommen */
+    }
+    #em{
+        font-size: 1.5em;
+        padding: 1.5em;
+        border-radius: 1.5em;
+    }
+
+    /* root (html) em */
+    #rem{
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+    }
+
+    /* vw 1% von viewport width (breite)*/
+    #vw{
+        font-size: 1vw;
+        padding: 1vw;
+        border-radius: 1vw;
+    }
+
+     /* vh 1% von viewport high (höhe)*/
+     #vh{
+        font-size: 1vh;
+        padding: 1vh;
+        border-radius: 1vh;
+    }
+
+    /* vmin 1% von viewport high (höhe)*/
+    #vmin{
+        font-size: 1vmin;
+        padding: 1vmin;
+        border-radius: 1vmin;
+    }
+    /* vmax 1% von viewport high (höhe)*/
+    #vmax{
+        font-size: 1vmax;
+        padding: 1vmax;
+        border-radius: 1vmax;
+    }
+
+    #kreis{
+        background-color:lightseagreen;
+        border: thin solid;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+
+    #quadrat{
+        background-color: antiquewhite;
+        /* border = Abkürzung für : */
+        border-width: 100px;
+        border-style: groove;
+        border-color: gray;
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+    }
+
+
+</style>
+
+</head>
+<body>
+
+    <h1>CSS Größeneinheit</h1>
+
+
+
+    <!-- ((div[id='']>h2+p>lorem10)+(hr))*8 -->
+    <div id="pixel">
+        <h2>pixel</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, accusamus.</p>
+    </div>
+    <hr>
+    <div id="prozent">
+        <h2>prozent</h2>
+        <p>Animi repellendus commodi iste consequuntur eaque! Aperiam maiores deleniti beatae.</p>
+    </div>
+    <hr>
+    <div id="em">
+        <h2>em</h2>
+        <p>Rem ducimus aliquid quidem corporis! Non ab nihil pariatur. Facere.</p>
+    </div>
+    <hr>
+    <div id="rem">
+        <h2>rem</h2>
+        <p>Repudiandae at placeat deserunt voluptatem sunt laborum ipsum minima labore?</p>
+    </div>
+    <hr>
+    <div id="vw">
+        <h2>vw / viewport width</h2>
+        <p>Officia dolor molestias corrupti. Vitae beatae similique ab alias at?</p>
+    </div>
+    <hr>
+    <div id="vh">
+        <h2>vh / viewport height </h2>
+        <p>Magni dolore ut cupiditate unde qui provident, praesentium sed fugit?</p>
+    </div>
+    <hr>
+    <div id="vmin">
+        <h2>vmin / viewport.min(vh, vw)</h2>
+        <p>Cumque eveniet natus inventore quibusdam nam exercitationem aliquam! Repudiandae, voluptatem!</p>
+    </div>
+    <hr>
+    <div id="vmax">
+        <h2>vmax / viewport.max(vh, vw)</h2>
+        <p>Rerum, corrupti repellendus atque velit autem perferendis porro facere deleniti!</p>
+    </div>
+    <hr>
+
+    <!-- mehr zu border  -->
+    
+    <div id="kreis"></div>
+    <div id="quadrat"></div>
+
+</body>
+</html>
