@@ -91,5 +91,4 @@ Ein Kurs von PPEDV AG :rocket:
 
 ## M120 | JS ADVANCED
 
-- [ ] Event-Listener & -Handler
-- [ ] Vordefinierte Objekte
+- [ ] offene Themen nach Bedarf der Teilnehmerinnen
