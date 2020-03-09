@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Variables</title>
+</head>
+<body>
+    <script>
+        //deklarieren von Variablen 
+        let x;
+        var y;
+
+        // deklarieren und initialisieren
+        var y = 4;
+        // let x = 3 gibt Synthax-Fehler! Let-Variable nicht 2* def. (SyntaxError)
+
+        // nur initialisiert
+        x = 3;
+        
+        // Gültigkeitsbereich (=Scopes) von var
+        var a = 2;
+        console.log("a vor {}:", a);
+        {
+            console.log("a in {} vor a=4:", a);
+            a = 4;
+            console.log("a in {} nach a=4:", a);
+        }
+        console.log("a nach {}:", a);
+
+   // Gültigkeitsbereich (=Scopes) von let
+        let b = 2;
+        console.log("b vor {}:", b);
+        {
+            console.log("b in {} vor b=4:", b);
+            b = 4;
+            console.log("b in {} nach b=4:", b);
+        }
+        console.log("b nach {}:", b);
+
+    // Gültigkeitsbereich (=Scopes) von let
+        let b = 2;
+        console.log("b vor {}:", b);
+        {
+            // console.log("b in {} vor b=4:", b); muss hier weg, da b sich auf das b in der Klammer bezieht
+            let b = 4;
+            console.log("b in {} nach b=4:", b);
+        }
+        console.log("b nach {}:", b);
+
+    // Konstante benötigen sofort einen Wert und sind "Fix"
+        const mehrwertSteuer = 0.19;
+        // mehrwertSteuer = 2.34 
+        // führt zu Fehlermeldung!
+        // Score wie bei let
+
+
+        
+
+
+
+        </script>
+</body>
+</html>
