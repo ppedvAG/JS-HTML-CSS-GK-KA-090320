@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS INTRO</title>
+</head>
+<body>
+    <h2>Eingabe abfangen und wieder anzeigen</h2>
+    <!-- (label>input)*2+button+output -->
+    <label for="">VORNAME<input id="vname" type="text"></label>
+    <label for="">NACHNAME<input id="nname" type="text"></label>
+    <button onclick="zeigeEingabe()">ZEIGE EINGABE</button>
+    <output id="outp"></output>
+    <script>
+        function zeigeEingabe() {
+            outp.value = vname.value + ' ' + nname.value
+        }
+        console.log(this)
+        
+
+    </script>
+    
+</body>
+</html>

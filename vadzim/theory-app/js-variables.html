@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS VARIABLES</title>
+</head>
+
+<body>
+    <script>
+        // Deklarieren
+        var y;
+        let x;
+
+        // Deklarieren + Initialisieren
+        var y = 4;
+        // let x = 3; // ruft Fehler auf
+        // Uncaught SyntaxError: Identifier 'x' has already been declared
+        // let Variablen darf man nicht zweimal deklarieren
+
+        // nur Initialisieren
+
+        x = 3;
+
+        // SCOPES
+        // Gültigkeitsbereich von var
+        var a = 2;
+        console.log("a vor {}: ", a);
+        {
+            console.log("a in {} vor a=4: ", a);
+            var a = 4;
+            console.log("a in {} nach a=4: ", a);
+        }
+        console.log("a nach {}: ", a);
+
+        // Gültigkeitsbereich von let
+        let b = 2;
+        console.log("b vor {}: ", b);
+        {
+            // console.log("b in {} vor b=4: ", b); /* mit b=4 kein Fehler, mit let b=4 aber schon*/
+            
+            let b = 4;
+            console.log("b in {} nach b=4: ", b);
+        }
+        console.log("b nach {}: ", b);
+
+        const mehrwertSteuer = 0.19;
+        /* Konstanten brauchen gleich einen Wert */
+        // mehrwertSteuer = 2.34;
+        /* dürfen keine weiteren Werte bekommen */
+        /* Scope gleich wie bei let */
+    </script>
+
+</body>
+
+</html>

@@ -36,3 +36,10 @@
 | snippet | effect |
 | --- | --- |
 | `clo` | console.log() |
+
+## HTML SYNTAX
+
+```
+attributname = "attributwert"
+```
+
