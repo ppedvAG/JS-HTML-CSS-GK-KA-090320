@@ -6,11 +6,70 @@
     <title>CSS SELECTORS</title>
     <style>
         /* Kommentar in CSS */
+        /* EINZELNE SELEKTOREN */
+        /* Universalselektor */
+        * {
+            border: thin solid;
+        }
+        /* Typselektor */
+        /* alle divs wurden selektiert */
+        div {
+            text-decoration: underline;
+        }
+        /* ID-Selektor */
+        #myH2 {
+            font-style: italic;
+        }
+        /* Class-Selektor */
+        .borderClass {
+            background-color:coral;
+        }
 
+        /* KOMBINATOREN / KOMBINIERTE SELEKTOREN */
+        /* Auflistung */
+        html, body {
+            border: thick dotted pink;
+        }
+        /* unmittelbare Geschwister */
+        /* alle p, die unmittelbar nach h2 vorkommen */
+        h2+p {
+            font-weight: 900;
+        }
+        /* Vorfahr-Nachfahr-Selektor */
+        .borderClass div {
+            color: yellowgreen;
+        }
+        /* Eltern-Kind-Selektor */
+        .borderClass > div {
+            text-decoration: line-through;
+        }
     </style>
 </head>
 <body>
     <!--  -->
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+
+    <h2>heading 2</h2>
+    <h2 id="myH2">heading 2</h2>
+
+    <p>paragraph</p>
+
+    <div class="borderClass">
+        div ebene 1
+        <div>
+            div ebene 2
+            <div>div ebene 3</div>
+        </div>
+    </div>
+
+    <div class="borderClass">
+        div ebene 1
+        <div>
+            div ebene 2
+            <div>div ebene 3</div>
+        </div>
+    </div>
     
 </body>
 </html>
