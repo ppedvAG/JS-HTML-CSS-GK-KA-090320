@@ -12,30 +12,41 @@ Ein Kurs von PPEDV AG :rocket:
 
 ## M00 | WARMING UP
 
-- [ ] Greeter
-- [ ] VS Code
-- [ ] Git & GitHub
+- [x] Greeter
+- [x] VS Code
+- [x] Git & GitHub
 
 ## M10 | JS, HTML, CSS GETTING STARTED
 
-- [ ] Struktur einer Webseite: HTML
-- [ ] Stile einer Webseite: CSS
-- [ ] Verhalten einer Webseite: JS
+- [x] Struktur einer Webseite: HTML
+- [x] Stile einer Webseite: CSS
+- [x] Verhalten einer Webseite: JS
+
+hellohtml.html, hellocss.css
 
 ## M20 | HTML INTRO
 
-- [ ] Mark-Up Elemente - Tags
-- [ ] Tags-Eigenschaften - Attribute
-- [ ] HTML Syntax
-- [ ] Content Types
+- [x] Mark-Up Elemente - Tags
+- [x] Tags-Eigenschaften - Attribute
+- [x] HTML Syntax
+- [x] Content Types
+
+html-tags.html
+
+Übung: Homepage mit verlinkten Unterseiten
 
 ## M30 | CSS INTRO
 
-- [ ] CSS-Regeln - Deklarationen
-- [ ] Selektoren
-- [ ] CSS-Eigenschaften
-- [ ] CSS Box
-- [ ] CSS-Größeneinheiten
+- [x] Emmet
+- [x] CSS-Regeln - Deklarationen
+- [x] Selektoren
+- [x] CSS-Eigenschaften
+- [x] CSS Box
+- [x] CSS-Größeneinheiten
+
+css-selectors.html, css-box.html, css-units.html
+
+Übung: Container in jeder HTML-Datei
 
 ## M40 | JS INTRO
 
