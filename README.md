@@ -52,21 +52,21 @@ css-selectors.html, css-box.html, css-units.html
 
 ## M40 | JS INTRO
 
-- [ ] Primitive Datentypen
-- [ ] Variablen
-- [ ] Operatoren
-- [ ] Ausdrücke & Anweisungen
-- [ ] Gültigkeitsbereiche
+- [x] Primitive Datentypen
+- [x] Variablen
+- [x] Operatoren
+- [x] Ausdrücke & Anweisungen
+- [x] Gültigkeitsbereiche
 
 ## M50 | HTML CONTINUED
 
-- [ ] Navigation einer Webseite
-- [ ] Inhalt gruppieren - Sectioning, Headings & Co
-- [ ] Daten strukturieren - HTML Tabellen & Listen
+- [x] Navigation einer Webseite
+- [x] Inhalt gruppieren - Sectioning, Headings & Co
+- [x] Daten strukturieren - HTML Tabellen & Listen
 
 ## M60 | CSS CONTINUED
 
-- [ ] Display: block, inline, table, list
+- [x] Display: block, inline, table, list
 - [ ] Spezifität
 - [ ] Pseudo-Klassen & -Elemente
 - [ ] Animationen & Transitions
@@ -77,8 +77,8 @@ css-selectors.html, css-box.html, css-units.html
 - [ ] Globales Objekt - window
 - [ ] Objekt-Typen
 - [ ] Datenstrukturen
-- [ ] Kontrollstrukturen
-- [ ] Funktionen
+- [x] Kontrollstrukturen
+- [x] Funktionen
 - [ ] Konstruktoren
 
 ## M80 | DOM INTRO
@@ -97,7 +97,8 @@ css-selectors.html, css-box.html, css-units.html
 
 - [ ] Position
 - [ ] Floating
-- [ ] Display: flex, grid
+- [x] Display: grid
+- [ ] Display: flex
 - [ ] Column-Count
 - [ ] Media Queries & Breakpoints
 - [ ] CSS Funktionen

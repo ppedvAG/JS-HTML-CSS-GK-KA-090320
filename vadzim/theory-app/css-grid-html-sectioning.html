@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID + SECTIONING</title>
+    <style>
+        #gridContainer {
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            /* grid-template-rows: 10% 80% 10%; */
+            grid-template-rows: 1fr 8fr 1fr;
+            height: 100vh;
+        }
+
+        @media (orientation: landscape) {
+            nav {
+            
+            }
+
+            section {}
+
+            aside {}
+
+        }
+
+        @media (orientation: portrait) {
+            nav {
+                display: none;
+            }
+
+            section {
+                grid-column: 1 / 4;
+            }
+
+            aside {
+                display: none;
+            }
+
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: cornsilk;
+            grid-column: 1 / 4;
+        }
+
+        nav {
+            background-color: darksalmon;
+        }
+
+        section {
+            background-color: rgb(112, 179, 151);
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            /* grid-template-columns: 1fr 1fr; */
+        }
+
+        article {
+            background-color: lightcoral;
+            height: 90%
+        }
+
+        aside {
+            background-color: mistyrose;
+        }
+
+        footer {
+            background-color: gainsboro;
+            grid-column: 1 / 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gridContainer">
+        <!-- header+nav+(section>article*2)+aside+footer -->
+        <header>
+            header
+            <!-- <h1>Heading</h1> -->
+        </header>
+        <nav>nav</nav>
+        <section>
+            <article>art 1</article>
+            <article>art 2</article>
+        </section>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+
+</body>
+
+</html>

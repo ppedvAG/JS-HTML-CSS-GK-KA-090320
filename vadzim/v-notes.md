@@ -40,6 +40,12 @@
 ## HTML SYNTAX
 
 ```html
+<openingtag attributename=attributevalue> content to render in this tag </closingtag>
+```
+
+oder
+
+```html
 <openingtag attributename="attributevalue"> content to render in this tag </closingtag>
 ```
 
@@ -49,5 +55,20 @@
 selectors {
     property: value;
     property: value;
+}
+```
+
+## JS SYNTAX
+
+Funktionen
+
+```js
+function _fctName_() {}
+```
+
+```js
+for (iterator; bedingung; aktualisierung; ) {
+    anweisung;
+    anweisung;
 }
 ```
