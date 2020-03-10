@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS CONTROLS</title>
+</head>
+<body>
+    <h1>KONTROLLSTRUKTUREN</h1>
+
+    <p>das längste Wort hat <span id="outp"></span> Buchstaben</p>
+
+    
+
+    <script>
+
+        let metalle = new Array('Kupfer', 'Aluminium', 'Eisen')
+
+/*         for (iterator; bedingung; aktualisierung; ) {
+            anweisung1;
+            anweisung2;
+        } */
+        let wortlängen = new Array(3);
+        // let wortlängen = [];
+        for (let i = 0; i < metalle.length; i++){
+            wortlängen[i] = metalle[i].length;
+            console.log('wortlängen :', wortlängen);
+            console.log('Math.max(...wortlängen) :', Math.max(...wortlängen)); // spread-Operator
+            outp.innerText = Math.max(...wortlängen);
+        }
+
+        
+        
+
+    </script>
+    
+</body>
+</html>

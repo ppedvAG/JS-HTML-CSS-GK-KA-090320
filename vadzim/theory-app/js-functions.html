@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS FUNCTIONS</title>
+</head>
+
+<body>
+    <h1>Funktionen</h1>
+    <!-- input+span+input+span+button -->
+    <input type=number placeholder=zahl1 id="inpZahl1">
+    <span>+</span>
+    <input type=number placeholder=zahl2 id="inpZahl2">
+    <span>=</span>
+    <!-- Variante 1 -->
+    <input type=button id=ergebnis value="summiere" onclick="addiere()">
+    <!-- Variante 2 -->
+    <input type=button id=ergebnis value="summiere" onclick="this.value = addiere2()">
+    <!-- Variante 3 -->
+    <input type=button id=ergebnis value="summiere" onclick="addiere3(inpZahl1.value, inpZahl2.value)">
+    <!-- Variante 4 -->
+    <input type=button id=ergebnis value="summiere" onclick="outp.value = addiere4(inpZahl1.value, inpZahl2.value)">
+    <output id="outp"></output>
+
+
+    <script>
+
+        /* IDs - sind var-Variablen in JS */
+        /* console.log('ergebnis :', ergebnis);
+        let ergebnis= 3; 
+        console.log('ergebnis :', ergebnis); */
+        console.log('ergebnis :', ergebnis);
+
+        /* FUNKTIONEN DEFINIEREN */
+        function addiere() {
+            // Eingaben vom Browser kommen immer als String rein
+            // ergebnis.value = inpZahl1.value + inpZahl2.value;
+
+            // ergebnis.value = +inpZahl1.value + +inpZahl2.value; //casting durch arithm. operatoren
+
+            ergebnis.value = Number(inpZahl1.value) + Number(inpZahl2.value); // casting mit Number()
+        }
+
+        // Funktion mit return
+        function addiere2() {
+            let summe = Number(inpZahl1.value) + Number(inpZahl2.value);
+            return summe;
+        }
+
+        // Funktion mit Parametern
+        function addiere3(parameter1, parameter2) {
+            ergebnis.value = Number(parameter1) + Number(parameter2);
+        }
+
+        // Funktion mit Parametern und return
+        function addiere4(parameter1, parameter2) {
+            ergebnis.value = Number(parameter1) + Number(parameter2);
+            return "summieren erfolgreich";
+        }
+
+    </script>
+
+</body>
+
+</html>

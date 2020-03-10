@@ -66,7 +66,7 @@ css-selectors.html, css-box.html, css-units.html
 
 ## M60 | CSS CONTINUED
 
-- [ ] Display: block, inline, table, list
+- [x] Display: block, inline, table, list
 - [ ] Spezifität
 - [ ] Pseudo-Klassen & -Elemente
 - [ ] Animationen & Transitions
@@ -77,8 +77,8 @@ css-selectors.html, css-box.html, css-units.html
 - [ ] Globales Objekt - window
 - [ ] Objekt-Typen
 - [ ] Datenstrukturen
-- [ ] Kontrollstrukturen
-- [ ] Funktionen
+- [x] Kontrollstrukturen
+- [x] Funktionen
 - [ ] Konstruktoren
 
 ## M80 | DOM INTRO

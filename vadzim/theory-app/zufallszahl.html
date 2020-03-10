@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZUFALLSZAHLSPIEL</title>
+</head>
+
+<body>
+    <!-- Randomzahl zw 0 und 4 -->
+    <!-- 3 Meldungen:
+    Zahl ist kleiner
+größer
+bingo, Sie haben die Zahl erraten -->
+
+    <h1>ZUFALLSZAHLSPIEL</h1>
+    <h2>Übung Zufallszahl erraten</h2>
+
+    <button onclick=spielBeenden()>beenden</button>
+
+    <p>erraten Sie eine Zufallszahl 0 / 1 / 2 / 3</p>
+    <input type="number" name="" id="inpZahl" placeholder="0 / 1 / 2 / 3" oninput="prüfe()">
+    <!-- onchange tritt nur auf, wenn input fokus verliert oder enter geklickt wurde -->
+    <!-- oninput tritt auf, sobald sich irgendwas im input-felt ändert -->
+    <output id=output></output>
+
+    <script>
+        /* ÜBUNG ZUFALLSZAHL */
+
+        function spielBeenden() {
+            wiederholungGewünscht = false;
+        }
+
+        let wiederholungGewünscht = true;
+
+        if(wiederholungGewünscht) {
+            var zufallszahl = Math.floor(Math.random() * 4);
+            console.log('zufallszahl :', zufallszahl);
+
+        }
+
+        
+
+        function prüfe() {
+            if (inpZahl.value == zufallszahl) {
+                output.value = "erraten!"
+                
+            } else if (inpZahl.value < zufallszahl) {
+                output.value = "Zufallszahl ist größer"
+            } else {
+                output.value = "Zufallszahl ist kleiner"
+            }
+            console.log('inpZahl.value :', inpZahl.value);
+        }
+    </script>
+
+</body>
+
+</html>

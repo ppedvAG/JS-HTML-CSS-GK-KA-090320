@@ -57,3 +57,18 @@ selectors {
     property: value;
 }
 ```
+
+## JS SYNTAX
+
+Funktionen
+
+```js
+function _fctName_() {}
+```
+
+```js
+for (iterator; bedingung; aktualisierung; ) {
+    anweisung;
+    anweisung;
+}
+```
