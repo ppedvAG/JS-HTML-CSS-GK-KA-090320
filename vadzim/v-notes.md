@@ -4,11 +4,11 @@
 
 | command | effect |
 | --- | --- |
-| `git clone _url_` | |
-| `git add .` | |
-| `git commit -m "_message_"` |     |
-| `git pull` |   |
-| `git push`  |   |
+| `git clone _url_` | erstellt eine lokale Kopie von einem Online-Repository |
+| `git add .` | fügt alle Änderungen zum Stage hinzu |
+| `git commit -m "_message_"` | trägt alles aus dem Stage in die lokale Kopie vom Repository ein und fügt diesem Eintrag eine Beschreibung hinzu |
+| `git pull` | lädt die aktuelle Version von dem Online-Repository runter |
+| `git push`  | lädt die aktuelle Version von dem lokalen Repository hoch |
 
 [git homepage](https://git-scm.com)
 
@@ -65,6 +65,8 @@ Funktionen
 ```js
 function _fctName_() {}
 ```
+
+for-Schleife
 
 ```js
 for (iterator; bedingung; aktualisierung; ) {

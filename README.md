@@ -76,7 +76,7 @@ css-selectors.html, css-box.html, css-units.html
 
 - [ ] Globales Objekt - window
 - [ ] Objekt-Typen
-- [ ] Datenstrukturen
+- [x] Datenstrukturen
 - [x] Kontrollstrukturen
 - [x] Funktionen
 - [ ] Konstruktoren
