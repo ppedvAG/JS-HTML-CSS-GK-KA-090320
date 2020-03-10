@@ -1,3 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
 #container {
     padding: 5vmax;
+}
+
+nav {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* ul - unordered list */
+nav ul {
+    /* punkte vor den LIs entfernen: */
+    list-style-type: none;
+    padding: 0;
+} 
+
+/* li - list item */
+nav li {
+    float: left;
+    height: 5em;
+    
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: .5em;
+    color: black;
+    margin: 0;
+}
+
+/* Pseudoselektor :hover */
+li a:hover {
+    color: white;
+    background-color: rgb(235, 194, 235);
 }

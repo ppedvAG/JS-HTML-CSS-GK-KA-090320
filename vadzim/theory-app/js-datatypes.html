@@ -43,10 +43,23 @@
 
 
           /* ### INTRO ### */
-          console.log(typeof 'text'); // string
+        console.log(typeof 'text'); // string
         console.log(typeof "text"); // string
         console.log(typeof `text`); // string
-        
+        let stringTest = 'sfghsg' + stringTest1;
+        console.log('stringTest :', stringTest);
+        stringTest = `sfghsg ${stringTest}`;
+        console.log('stringTest :', stringTest);
+        /* Mit Hilfe von Interpolation-Strings kann man innherhalb von String auf JS-Ausdrücke zugreifen. */
+        // stringTest = `sfghsg ${let smth = 'smth';}`; 
+        //keine Anweisungen / Statements in den Klammern {} bei Interpol-Strings
+
+        let interpolationString = `asdfadf
+        asf
+        asdf          sdfgsdfgdfg`;
+        console.log('interpolationString :', interpolationString);
+        // Formatierung wird beibehalten
+                
         console.log(typeof 1); // number
         console.log(typeof 1.1); // number
         
@@ -74,6 +87,11 @@
         // console.log(navigator.appName); // Netscape  
         console.log(typeof 123e5); // number
         console.log(typeof Infinity); // number
+
+        // Max Wert von Number
+        // let myNr = new Number(4);
+        console.log(Number.MAX_VALUE); // in Exponential: 1.7976931348623157e+308
+        // normal: 9 007 199 254 740 991
         console.log(typeof null); // object
         console.log(null instanceof Object); // false
         console.log(typeof String('text')); // string
@@ -100,6 +118,7 @@
         console.info('strings & numbers');
         console.log('"5" + 5 = ');
         console.log("5" + 5); // 55
+        // toString();
         console.log('typeof ("5" + 5) -> ');
         console.log(typeof ("5" + 5)); // string
 
@@ -143,15 +162,6 @@
         console.log(typeof +cStr); // number
         console.log(-cStr); // -6
         console.log(typeof (cStr*1)); // number
-
-        
-
-
-
-
-
-
-
         
         </script>
     
