@@ -39,7 +39,15 @@
 
 ## HTML SYNTAX
 
-```
-attributname = "attributwert"
+```html
+<openingtag attributename="attributevalue"> content to render in this tag </closingtag>
 ```
 
+## CSS SYNTAX
+
+```css
+selectors {
+    property: value;
+    property: value;
+}
+```

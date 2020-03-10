@@ -9,20 +9,32 @@
 
 <body>
     <script>
-        // Deklarieren
-        var y;
+        // VARIABLEN DEFINIEREN
+        // im Fall mit Variablen heißt es Deklarieren
+        // es gibt mehrere Arten von Variablen in JS:
+        var y; // 
         let x;
+        // t; // Fehler
+        
 
         // Deklarieren + Initialisieren
         var y = 4;
         // let x = 3; // ruft Fehler auf
         // Uncaught SyntaxError: Identifier 'x' has already been declared
         // let Variablen darf man nicht zweimal deklarieren
+        let z = 7;
 
-        // nur Initialisieren
+        // es geht auch ohne Stichwort        
+        t = 5;
+        
+        // ####################################################
+        // VARIABLEN NUTZEN        
 
-        x = 3;
+        x = 3; // deklarierte Variable initialisieren
+        console.log('x :', x); // Variable an eine Funktion als Argument übergeben
+        let sum = y + z; // Variablen in Berechnungen verwenden 
 
+        // ####################################################
         // SCOPES
         // Gültigkeitsbereich von var
         var a = 2;
@@ -44,6 +56,14 @@
             console.log("b in {} nach b=4: ", b);
         }
         console.log("b nach {}: ", b);
+
+        // Gültigkeitsbereich von der Variable, initialisiert ohne Schlüsselwort
+        console.log('t vor {} : ', t);
+        {
+            t = 6;
+        }
+        console.log('t nach {} : ', t);
+        // dann ist es äquivalent zu 'var t = 5;'
 
         const mehrwertSteuer = 0.19;
         /* Konstanten brauchen gleich einen Wert */

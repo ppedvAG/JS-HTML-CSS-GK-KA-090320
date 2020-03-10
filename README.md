@@ -22,7 +22,9 @@ Ein Kurs von PPEDV AG :rocket:
 - [x] Stile einer Webseite: CSS
 - [x] Verhalten einer Webseite: JS
 
-hellohtml.html, hellocss.css
+[hello-html.html](./vadzim/hello-html.html)
+
+[hello-css.css](./vadzim/hellocss.css)
 
 ## M20 | HTML INTRO
 
