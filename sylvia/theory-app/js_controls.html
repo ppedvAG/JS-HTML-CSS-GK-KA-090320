@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>schleife</title>
+</head>
+
+<body>
+    <h1>Kontrollstrukturen </h1>
+
+    <p> das längste Wort hat <span id=output> </span> Buchstaben </p>
+
+    <h2>Übung: Zufallszahl erraten </h2>
+    <p> erraten Sie eine Zufallszahl 0/1/2/3 </p>
+    <!-- placeholder = vorgeschlagener Text -->
+    <!-- on input liefert "sofort" Ergebnis, ohne return-Button -->
+    <!-- onchange liefert Ergebnis erst nach return-Button -->
+    <input type="number" placeholder="0/1/2/3"  id="inpZahl" oninput="prüfen()">
+    <output id=outp></output>
+
+    <script>
+
+        let metalle = new Array('Kupfer', 'Aluminium', 'Eisen')
+
+        // for(iterator; bedingung; aktualisierung;){
+        //     anweisung1;
+        //     anweisung2;
+        // }
+
+        // entweder
+        // let wortlänge = new Array (        );
+        //  oder
+        let wortlänge = [];
+
+        for (let i = 0; i < metalle.length; i++) {
+
+            wortlänge[i] = metalle[i].length;
+            console.log('wortlänge :', wortlänge);
+            console.log('Math.max(...wortlänge) :', Math.max(...wortlänge));
+            output.innerText = Math.max(...wortlänge);
+        }
+
+
+//  Aufgabe: Random-Zahl zwischen 0 und 4 ; 3 Meldungen sollen erscheinen - Zahl ist größer, kleiner oder getroffen
+
+        let returnofMathRandom = Math.random();   // diee Funktion liefert "irgendeine" Zahl
+        console.log('returnofMathRandom :', returnofMathRandom);
+        console.log(returnofMathRandom*4);
+        console.log(Math.floor(returnofMathRandom*4));// immer nach unter
+        console.log(Math.ceil(returnofMathRandom*4));// immer nach oben
+        console.log(Math.round(returnofMathRandom*4));// math richtig
+        console.clear();    // alles wird auf NULL gesetzt
+
+        let Zufallszahl = Math.floor(Math.random()*4);
+        console.log('Zufallszahl :', Zufallszahl); 
+        function prüfen(){ 
+            if (inpZahl.value == Zufallszahl ){
+                outp.value = 'erraten'
+            } else
+            if (inpZahl.value < Zufallszahl ){
+                outp.value = 'gesuchte Zahl ist größer'  
+            }   else
+            if (inpZahl.value > Zufallszahl ){
+                outp.value = 'gesuchte Zahl ist kleiner'  
+            } 
+
+            // Console soll nur zeigen, wenn Benutzer etwas eingegeben hat
+            console.log('inpZahl.value :', inpZahl.value);         
+        }
+        output.innerText = Math.max(...wortlänge);
+
+        
+        
+    </script>
+
+</body>
+
+</html>

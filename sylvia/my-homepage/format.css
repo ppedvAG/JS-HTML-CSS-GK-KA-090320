@@ -1,9 +1,57 @@
 
-        div {
+        /* div {
         border: medium solid lightblue;
+    } */
+    * {
+        box-sizing: border-box;
     }
+    
     #container{
-        font-size: 1.5em;
-        padding: 1.5em;
-        border-radius: 1.5em;
+        padding: 5vmax;
+     
+    }
+
+    nav{
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    /* unordered list (nur unsortiere Listen innerhalb von nav )*/
+    nav ul {
+        /* default-wert list-style-type = disc (punkt bei aufzählung) */
+            list-style-type: none;
+            padding: 0;
+            background-color: yellow;
+    }
+
+    /*  li = list item (nur listen die innerhalb von navigation vorkommen )*/
+    nav li{
+        float: left;
+        height: 4em;    /* höhe der schrift */
+        background-color: red;
+    }
+
+    /* alle links innerhalb von a ändern */
+    nav a {
+        text-decoration: none;
+        display: inline-block;
+        padding: .5em ;
+        /* padding und boarder kann mehrere Werte enthalten max 4: oben unten rechts links 
+        bei zwei: erster Wert für oben/unten, zweiter Wert für rechts/links 
+        steht nur ein Wert gilt er für alle 4 Seiten */
+        color: black;
+        margin: 0;
+    }
+    /* aus Skript: 
+    <nav>
+        <ul>
+            <li><a >
+             */
+    /*  fährt nutzer mit maus drüber (hover) - sep. selektor= pseudoelement */
+    li a:hover {
+        color: white;
+        background-color:rgb(235,194,235);
+
     }

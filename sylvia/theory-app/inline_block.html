@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Block</title>
+    <style>
+        p, span{
+            background-color: salmon;
+        }
+        .bsp2{
+            width: 100px;
+            height: 100px;
+        }
+        .bsp3{
+            border: thick dotted;
+            padding: 20px;
+            margin: 20px;
+        }
+        .bsp4{
+           display: inline-block;
+           width: 100px;
+            height: 100px;
+        }
+        .bsp5{
+            /* display: block;  */
+            /* sollen sich verhalten wie paragraph*/
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unterschied zwischen Inline und Block-Elementen</h1>
+    <!-- (h2+p.bsp${paragraph}*2+span.bsp${span}*2+hr)*5 -->
+    <h2>1. Breite</h2>
+    <pre>
+        Block-Elemente so breit wie möglich
+        Inline-Elemente so breit wie nötig
+    </pre>
+    <p class="bsp1">paragraph</p>
+    <p class="bsp1">paragraph</p>
+    <span class="bsp1">span</span>
+    <span class="bsp1">span</span>
+    <hr>
+    <h2>2. Größenangaben</h2>
+    <pre>
+        Block-Elemente Format wie vorgegeben
+        Inline-Elemente ignorieren width und heiht
+    </pre><p class="bsp2">paragraph</p>
+    <p class="bsp2">paragraph</p>
+    <span class="bsp2">span</span>
+    <span class="bsp2">span</span>
+    <hr>
+    <h2>3. CSS Box</h2>
+    <pre>
+        Inline-Elemente ignorieren margin top und margin bottom
+    </pre>
+    <p class="bsp3">paragraph</p>
+    <p class="bsp3">paragraph</p>
+    <span class="bsp3">span</span>
+    <span class="bsp3">span</span>
+    <hr>
+    <h2>4. Vorteil von Block und Inline Kombinieren </h2>
+    <p class="bsp4">paragraph</p>
+    <p class="bsp4">paragraph</p>
+    <span class="bsp4">span</span>
+    <span class="bsp4">span</span>
+    <hr>
+    <h2>5. Kann ich die Displayproperty überall ändern?</h2>
+    <pre>
+        Inline zu Block funktioniert bedingt (Abstand unter und ober Zeile fehlt)
+        Block zu Inline funktioniert einwandfrei
+    </pre>
+    <p class="bsp5">paragraph</p>
+    <p class="bsp5">paragraph</p>
+    <span class="bsp5">span</span>
+    <span class="bsp5">span</span>
+    <hr>
+
+</body>
+</html>
+
+<!-- pre = wie format = predefined - alles bleibt so wie eingegeben -->
+<pre>
+
+    bla bla
+
+    blubber
+</pre>

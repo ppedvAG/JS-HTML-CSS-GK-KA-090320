@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Übung</title>
+</head>
+
+<body>
+
+    <h2>Übung: Zufallszahl erraten </h2>
+
+    <button onclick=spielBeenden()>beenden </button>
+    <p> erraten Sie eine Zufallszahl 0/1/2/3 </p>
+
+    <input type="number" placeholder="0/1/2/3" id="inpZahl" oninput="prüfen()">
+    
+    <output id=outp></output>
+    
+    <script>
+        //  Aufgabe: Random-Zahl zwischen 0 und 4 ; 3 Meldungen sollen erscheinen - Zahl ist größer, kleiner oder getroffen
+
+        function spielBeenden() {
+            wiederholungewünscht = false;
+        }
+        let wiederholungewünscht = true;
+        do {
+            let Zufallszahl = Math.floor(Math.random() * 4);
+            console.log('Zufallszahl :', Zufallszahl);
+        } while (wiederholungewünscht)
+
+
+        function prüfen() {
+            if (inpZahl.value == Zufallszahl) {
+                outp.value = 'erraten'
+            } else
+                if (inpZahl.value < Zufallszahl) {
+                    outp.value = 'gesuchte Zahl ist größer'
+                } else
+                    if (inpZahl.value > Zufallszahl) {
+                        outp.value = 'gesuchte Zahl ist kleiner'
+                    }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

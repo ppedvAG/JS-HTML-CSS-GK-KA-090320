@@ -29,24 +29,39 @@
         console.log(typeof mySymbol1); // symbol
 
         console.info('mySymbol1 instanceof Object');
-        console.log(mySymbol1 instanceof Object); // false
+        console.log(mySymbol1 instanceof Object); // ist mySymbol1 teil von objekt? // Erg: false
+        
 
         let myNull = null;
         console.info('typeof myNull');
         console.log(typeof myNull); // object
 
         console.info('myNull instanceof Object');
-        console.log(myNull instanceof Object); // false
+        console.log(myNull instanceof Object); // ist myNull teil von objekt? // Erg: false
 
 
         // sind alle Variablen, angelegt mit Konstruktoren, Objekte // ja!
 
 
           /* ### INTRO ### */
-          console.log(typeof 'text'); // string
+        console.log(typeof 'text'); // string
         console.log(typeof "text"); // string
         console.log(typeof `text`); // string
-        
+        // alt:
+        let stringTest = 'blabla'+stringTest1;  // Wenn '='enthalten = Zuweisung/Anweisung
+        console.log('stringTest:', stringTest);
+        stringtest = `blabla $(stringTest)`;  	// Wenn '='enthalten = Zuweisung/Anweisung
+        console.log('stringTest:', stringTest);
+        // mit Hilfe von Interpolation-Strings kann man innehrlab von String auf JS-Ausdrücke zugreifen. 
+        // stringTest = `blabla $(let smth = 'smth';)`;
+        // keine Anweisung / Statements in den Klammern {} bei Interpol-Strings;
+
+        let InterpolationString = `asd
+        asf
+        asdf  bubber`;
+        console.log('interpolationString:', InterpolationString);
+        // Formatierung wird beibehalten 
+
         console.log(typeof 1); // number
         console.log(typeof 1.1); // number
         
@@ -72,8 +87,13 @@
         console.log(['element1', 'element2'] instanceof Object); // true
         // console.log(typeof `objekt 'navigator' hat folgenden Namen: ${navigator.appName}`); // string  
         // console.log(navigator.appName); // Netscape  
-        console.log(typeof 123e5); // number
-        console.log(typeof Infinity); // number
+        console.log(typeof 123e5); // bedeutet 123 hoch 5/ Erg: number
+        console.log(typeof Infinity); // Größer als number
+        // max-Wert von number
+        // let myNr = new Number(4);
+        console.log(Number.MAX_Value); // in Expotential: 1.7...e+308
+        // normal: 9 007 199 254 740 991
+
         console.log(typeof null); // object
         console.log(null instanceof Object); // false
         console.log(typeof String('text')); // string
@@ -100,6 +120,7 @@
         console.info('strings & numbers');
         console.log('"5" + 5 = ');
         console.log("5" + 5); // 55
+        // toString();
         console.log('typeof ("5" + 5) -> ');
         console.log(typeof ("5" + 5)); // string
 
@@ -145,13 +166,6 @@
         console.log(typeof (cStr*1)); // number
 
         
-
-
-
-
-
-
-
         
         </script>
     

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <style> 
+        th, td {border: thin solid;}
+        table{ 
+            /* display: table */ /* default wert bei Tabellen */
+            /*background-color: cadetblue;*/ /* komplette Tabelle gleiche Farbe */
+            /* rahmen wird "übereinander" gelegt */
+            border-collapse: collapse;
+        
+            }
+       /*     alle tablerows, die gerade Kind-element sind bekommen besondere Stile*/
+       /* odd für unterade, even für gerade */
+       tr:nth-child(odd) {background-color: cadetblue;}
+    </style>
+</head>
+<body>
+    
+<h1>Tabellen anlegen mit HTML</h1>
+<table>
+    <caption> table caption </caption>
+        <thead>
+            <tr>
+                <th>zeile 1</th>
+                <th>zeile 2</th>
+                <th>zeile 3</th>
+                <th>zeile 4</th>
+                <th>zeile 5</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>daten 1</td>
+                    <td>daten 2</td>
+                    <td>daten 3</td>
+                    <td>daten 4</td>
+                    <td>daten 5</td>
+                </tr>
+                <tr>
+                    <td>daten 1</td>
+                    <td>daten 2</td>
+                    <td>daten 3</td>
+                    <td>daten 4</td>
+                    <td>daten 5</td>
+                </tr>
+                <tr>
+                    <td>daten 1</td>
+                    <td>daten 2</td>
+                    <td>daten 3</td>
+                    <td>daten 4</td>
+                    <td>daten 5</td>
+                </tr>     
+                <tr>
+                    <td>daten 1</td>
+                    <td>daten 2</td>
+                    <td>daten 3</td>
+                    <td>daten 4</td>
+                    <td>daten 5</td>
+                </tr>     
+
+         </tbody>
+        <tfoot>
+                    <tr>
+                        <td>food 1</td>
+                        <td>food 2</td>
+                        <td>food 3</td>
+                        <td>food 4</td>
+                        <td>food 5</td>
+                    </tr>   
+        </tfoot>
+            
+        
+    
+</table>
+
+
+</body>
+</html>

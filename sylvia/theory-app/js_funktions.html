@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions / Funktionen</title>
+</head>
+<body>
+    <h1>Funktionen </h1>
+    <!-- input+span+input+span+button -->
+    <!-- nur nummer ist als zahl zugelassen -->
+    
+    <input type=number placeholder="Zahl1" id="inpZahl1">
+    <span>+</span>
+    <input type=number placeholder="Zahl2" id="inpZahl2">
+    <span>=</span>
+    <!-- für funktion 1: -->
+    <!-- <input type="button" id=ergebnis value="summiere" onclick="addiere()"> -->
+    <!-- für funktion 2: -->
+    <!-- <input type="button" id=ergebnis value="summiere" onclick="this.value = addiere2()"> -->
+    <!-- für funktion 3: -->
+    <!-- <input type="button" id=ergebnis value="summiere" onclick="addiere3(event)"> -->
+    <!--  für funktion 4: -->
+    <input type="button" id=ergebnis value="summiere" onclick="outp.value = addiere3(inpZahl1.value, inpZahl2.value)">
+    <output id="outp"> </output>
+
+
+    <script>
+
+        console.log('ergebnis:', ergebnis);
+// Funktionen 1 def:
+        function addiere(){
+// !-- alles was vom browser komm, kommt als string an, daher muss umgewandelt werden -->
+            // ergebnis.value = inpZahl1.value + inpZahl2.value;
+            // Number davor wandelt um Achtung: groß- kleinschreibung!!!
+            // er zeigt das Ergebnis nur an, hält es aber nicht nach
+            ergebnis.value = Number(inpZahl1.value) + Number(inpZahl2.value);
+        }
+
+// Funktion 2 mit Return (Rückgabewert)
+// er zeigt das Ergebnis an, und merkt es sich
+        function addiere2(){
+            let summe = Number(inpZahl1.value) + Number(inpZahl2.value);
+            return summe;
+        }
+
+// Funktion 3 mit Parametern 
+        function addiere3(parameter){
+            parameter.target.value = Number(inpZahl1.value) + Number(inpZahl2.value);
+
+        }
+
+// Funktion 4 mit Parametern 
+function addiere3(parameter1, parameter2){
+            ergebnis.value = Number(parameter1) + Number(parameter2);
+            return "summieren erfolgreich";
+        }
+
+
+    </script>
+</body>
+</html>
