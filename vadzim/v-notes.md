@@ -74,3 +74,9 @@ for (iterator; bedingung; aktualisierung; ) {
     anweisung;
 }
 ```
+
+## CSS snippets
+
+| snippet | effect |
+| --- | --- |
+| pos:s | position: static |

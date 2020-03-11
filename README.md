@@ -98,10 +98,10 @@ js-forms.html
 
 ## M100 | CSS ADVANCED
 
-- [ ] Position
+- [x] Position
 - [ ] Floating
 - [x] Display: grid
-- [ ] Display: flex
+- [x] Display: flex
 - [ ] Column-Count
 - [ ] Media Queries & Breakpoints
 - [ ] CSS Funktionen
