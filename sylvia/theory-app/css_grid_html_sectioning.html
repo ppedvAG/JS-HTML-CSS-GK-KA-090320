@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid + Sectioning</title>
     <style>
-        #gridContainer{
+        #gridContainer {
             display: grid;
             /* aufteilung der seite in spalten - mittlere am breitesten  */
             grid-template-columns: 1fr 4fr 1fr;
-            grid-template-rows: 15% 80% 5% ; /* geht als fr (fracture) oder als % */
+            grid-template-rows: 15% 80% 5%;
+            /* geht als fr (fracture) oder als % */
             height: 100vh;
         }
-/* damit er bei anderen Screens evtl. etwas nicht anzeigt */
-@media  (orientation: landscape) {
-    nav{}
-    section{}
-    aside{}
-}
-@media  (orientation: portrait) {
-    nav{display: none}
-    section{grid-column: 1/4;}
-    aside{display: none}
-}
+
+        /* damit er bei anderen Screens evtl. etwas nicht anzeigt */
+        @media (orientation: landscape) {
+            nav {}
+
+            section {}
+
+            aside {}
+        }
+
+        @media (orientation: portrait) {
+            nav {
+                display: none
+            }
+
+            section {
+                grid-column: 1/4;
+            }
+
+            aside {
+                display: none
+            }
+        }
 
 
         /* damit kein scroll-Fenste erscheint */
-        body{
+        body {
             margin: 0;
         }
-        header{
+
+        header {
             background-color: cornflowerblue;
             grid-column: 1/ 4;
         }
-        nav{
+
+        nav {
             background-color: darkgoldenrod;
         }
-        section{
+
+        section {
             background-color: darkgray;
         }
-        article{
-            background-color:salmon;
+
+        article {
+            background-color: salmon;
         }
-        aside{
+
+        aside {
             background-color: darkgreen;
         }
-        footer{
+
+        footer {
             background-color: darkseagreen;
             grid-column: 1/4;
         }
     </style>
 </head>
+
 <body>
     <div id="gridContainer">
-        <header>header 
+        <header>header
             <!-- <h1>Heading</h1> -->
         </header>
-        
+
         <!-- nav+(section>article*2)+aside+fooder -->
         <nav>nav Navigation</nav>
         <section>
@@ -67,6 +88,39 @@
         <footer>footer meist Impressum</footer>
     </div>
 
-    
+
+    <!-- unterschied zwischen div und section:
+        h1 in verschachtelten divs sehen gleich aus
+        h1 in verschachtelten sections werden angepasst
+    je tiefer die Verschachtelun - je kleiner die Schrift h1
+    Paragrafen wurden aber nicht angepasst -->
+    <!-- h1+div>h1+div>h1+div -->
+    <h1>heading 1</h1>
+    <p>Lorem, ipsum dolor.</p>
+
+    <div>
+        <h1>heading 1</h1>
+        <p>Lorem, ipsum dolor.</p>
+        <div>
+            <h1>heading 1</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- h1+section>h1+section>h1+section -->
+    <h1> heading 1 </h1>
+    <p>Lorem, ipsum dolor.</p>
+    <section>
+        <h1>heading 1</h1>
+        <p>Lorem, ipsum dolor.</p>
+        <section>
+            <h1>heading 1</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <section></section>
+        </section>
+    </section>
+
 </body>
+
 </html>

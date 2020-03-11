@@ -56,6 +56,23 @@ function addiere3(parameter1, parameter2){
             return "summieren erfolgreich";
         }
 
+// anonyme funktionen
+// werden gebraucht,wenn gleichzeitig definiert und ausgeführt werden soll
+setTimeout(function(){
+    // clg
+console.log('Meldung nach 3 Sekunden');
+}, 3000)
+
+// als Pfeil-Funktion / Arrowfunction / Labda
+// andere Schreibweise für anonyme Funktionen
+setTimeout(() => {
+console.log('Meldung nach 4 Sekunden');
+}, 4000)
+
+// bei nur einer Anweisung in der Funktion kann geschweifte Klammer weg
+setTimeout(() => console.log('Meldung nach 5 Sekunden'), 5000)
+
+
 
     </script>
 </body>
