@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Window</title>
+</head>
+
+<body>
+
+    <script>
+        console.log('window :', window);
+        // () ist ein Operator, der die Funktionen gleich ausführt
+        // ohne () nur mit dem Bezeichner der Funktion können wir den Körper einer Funktion an eine ander übergeben
+        this.onclick = myFunction;
+        function myFunction() {
+            console.log('wurde geklickt');
+        }
+
+
+        // da man sich im Scope von Window grad befindet, kann man auf die Member von Window zugreifen
+        // alle drei Befehle sind identisch 
+        // window.alert()
+        // this.alert()
+        // alert()
+        // sep. pop-up erscheint - alert mit eingabefeld
+
+        // window.prompt()
+        // window.confirm()
+
+        //  man möchte Nutzer bspw. auf etwas hinweisen
+        // return von alert 
+        // let alertReturn = alert('Hallo aus alert')
+        // console.log('alertReturn :', alertReturn); 
+        // //liefert undefinded zurück
+
+        // return von prompt
+        // wird genutzt um den Nutzer nach einer Eingabe zu fragen
+        // let promptReturn = window.prompt('Geben sie ihr Alter ein')
+        // console.log('promptReturn :', promptReturn);
+        //liefert eingegebenen Wert/Text zurück
+
+        // return von confirm
+        // wird genutzt um Zusage vom Benutzer zu erhalten (bspw. cookies)
+        let confirmReturn = window.confirm('Bitte Ruhe!')
+        console.log('confirmReturn :', confirmReturn);
+        // liefert true bei "ok"
+        // liefert false bei "abbrechen"
+
+
+    </script>
+
+</body>
+
+</html>

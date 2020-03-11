@@ -1,68 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>js-strings</title>
 </head>
+
 <body>
+    <!--  achtung: string kleingeschrieben = primitiv, String großgeschrieben = Objekt -->
+    <h1>JS string und String objekt </h1>
+    <!-- (h3{Methode$ :}+p#outp$)*9 -->
 
-     <!-- (h3{Methode$ :}+p#outp$)*9 -->
+    <h3>always false by compare of String-objects</h3>
+    <pre>primitiven strings kann man aber vergleichen </pre>
+    <p id="output"></p>
+    <hr>
 
-     <h3>always false by compare</h3>
-     <p id="output"></p>
-     <h3>//charAt()</h3>
-     <p id="output1"></p>
-     <h3>//indexOf()</h3>
-     <p id="output2"></p>
-     <h3>//lastIndex()</h3>
-     <p id="output3"></p>
-     <h3>//slice()</h3>
-     <p id="output4"></p>
-     <h3>//split()</h3>
-     <p id="output5"></p>
-     <h3>//substr()</h3>
-     <p id="output6"></p>
-     <h3>//toLowerCase()</h3>
-     <p id="output7"></p>
-     <h3>//toUpperCase()</h3>
-     <p id="output8"></p>
-     <h3>//concat()</h3>
-     <p id="output9"></p>
- 
-     <script>
-         //let zeichenkette = "Eine Zeichenkette zum Austesten von String-Methoden."
-         //let zeichenkette = 'zeichenkette';
-         //typeof - string
-         let myString = new String("Eine Zeichenkette zum Austesten von String-Methoden.");
-         //typeof - object
-         //Don't create strings as objects. It slows down execution speed.
- //The new keyword complicates the code.
- 
- /* Vergleichen von Objekten ergibt immer false */
-         //let myString2 = new String("Eine Zeichenkette zum Austesten von String-Methoden.");
-         output.innerHTML = myString == myString2; //false
-         output.innerHTML = myString === myString2; //false
- 
-         //charAt(number)
-         output1.innerHTML = "";
-         //indexOf()
-         output2.innerHTML = "";
-         //lastIndex()
-         output3.innerHTML = "";
-         //slice()
-         output4.innerHTML = "";
-         //split()
-         output5.innerHTML = "";
-         //substr()
-         output6.innerHTML = "";
-         //toLowerCase()
-         output7.innerHTML = "";
-         //toUpperCase()
-         output8.innerHTML = "";
-         //concat()
-         output9.innerHTML = "";
-    
+    <h3>//charAt()</h3>
+    <pre>gibt den Buchstaben an einer bestimmten Stelle zurück</pre>
+    <p id="output1"></p>
+
+    <h3>//indexOf()</h3>
+    <pre>gibt die erste Stelle zurück, an welcher ein bestimmtes Zeichen steht</pre>
+    <p id="output2"></p>
+
+    <h3>//lastIndex()</h3>
+    <pre>gibt die letzte Stelle zurück, an welcher ein bestimmtes Zeichen steht</pre>
+    <p id="output3"></p>
+
+    <h3>//slice()</h3>
+    <pre>schneidet string in zwei sep. Teile an der angegebenen Stelle (index)</pre>
+    <pre>gibt nur den abgeschnittenen Teil zurück</pre>
+    <p id="output4"></p>
+
+    <h3>//split()</h3>
+    <pre>schneidet string in zwei sep. Teile an der angegebenen Stelle (Zeichen)</pre>
+    <p id="output5"></p>
+
+    <h3>//substr()</h3>
+    <p id="output6"></p>
+
+    <h3>//toLowerCase()</h3>
+    <p id="output7"></p>
+
+    <h3>//toUpperCase()</h3>
+    <p id="output8"></p>
+
+    <h3>//concat()</h3>
+    <pre>addiert mehrere strings</pre>
+    <p id="output9"></p>
+
+    <script>
+        //let zeichenkette = "Eine Zeichenkette zum Austesten von String-Methoden."
+        //let zeichenkette = 'zeichenkette';
+        //typeof - string
+        let myString = new String("Eine Zeichenkette zum Austesten von String-Methoden.");
+        //typeof - object
+        //Don't create strings as objects. It slows down execution speed.
+        //The new keyword complicates the code.
+
+        /* Vergleichen von Objekten ergibt immer false */
+        let myString2 = new String("Eine Zeichenkette zum Austesten von String-Methoden.");
+        output.innerHTML = myString == myString2; //false
+        output.innerHTML = myString === myString2; //false
+
+        console.log("'bla' =='bla' :", 'bla' == 'bla'); // true
+        console.log("'4'' ==4 :", '4' == 4); // true, weil nur Werte verglichen
+        console.log("'4'' ===4 :", '4' === 4); // false, weil auch Datentypen verglichen
+
+
+        //charAt(number)
+        output1.innerHTML = myString.charAt(5);
+        //indexOf()
+        output2.innerHTML = myString.indexOf();
+        //lastIndex()
+        output3.innerHTML = myString.lastIndexOf();
+        //slice()
+        output4.innerHTML = myString.slice();
+        //split()
+        output5.innerHTML = myString.split(' ');
+        console.log('typeof myString.split("Z") :', typeof myString.split("Z")); // objekt
+        console.log('myString.split("Z") :', myString.split("Z")); // array mit 2 stings
+        console.log('myString nach split :', myString); // Wert der variablen hat sich nicht geändert
+
+        //substr()
+        output6.innerHTML = myString.substr(0, myString.length-3);
+        //toLowerCase()
+        output7.innerHTML = "";
+        //toUpperCase()
+        output8.innerHTML = "";
+        //concat()
+        output9.innerHTML = "";
+    </script>
 </body>
+
 </html>

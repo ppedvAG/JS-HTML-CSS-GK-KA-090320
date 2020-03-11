@@ -10,9 +10,15 @@
 
 <body>
 
+
+    <h1>Formulare</h1>
+
     <form action="#" id="firstForm">
         <section>
-            <h1>Datalist & Autovervollständigung</h1>
+            <h2>Datalist & Autovervollständigung</h2>
+            <!-- input-feld vom typ text - neues attribut = list
+                in list steht id von einer datalist -->
+            <!-- autocomplete = ich gebe in Feld r ein - es erscheint rot und grün zur auswahl(=Filtern beim tippen) -->
             <input type="text" id="inp1" list="farben" autocomplete="on" />
             <!-- 2 inputs dürfen die gleiche Data-Liste benutzen -->
             <!-- <input type="text" id="inp2" list="farben" autocomplete="on" /> -->
@@ -21,25 +27,36 @@
                 <option value="Grün"></option>
                 <option value="Blau"></option>
             </datalist>
+            <!-- in skript = btn1 -->
             <button id="btn1" type="button">OK</button>
             <output id="outp1"></output>
         </section>
-        
+        <hr>
+
         <section>
-            <h1>fieldset</h1>
+            <h2>fieldset</h2>
             <p>Eingabe aus Input wird beim Klick auf Button in Output angezeigt</p>
             <fieldset>
                 <legend>NAME</legend>
+                <!-- label: ich klicke auf Vorname, Cursor steht im Feld wo ich vorname eingeben soll -->
                 <label for="fname">VORNAME
+                    <!-- placeholder = grau, value = schwarz -->
                     <input id="fname" type="text" placeholder="Max" />
+                    <!-- <input id="fname" type="text" value="Max" /> -->
+                    <!-- value = anfangswert von input, den man aber überschreiben kann -->
                 </label>
 
                 <label for="lname">NACHNAME
+                    <!-- title: ich gehe mit Maus über NN - es erscheint ein "title" = tooltip -->
+                    <!-- pattern: welche Zeichen sind erlaubt? bitte googeln regular expression für passwort (regexlib.com) -->
+
                     <input id="lname" type="text" placeholder="Mustermann" title="title test ohne pattern" />
                 </label>
-                <label for="">EMAIL
-                    <input type="email" name="" id="" value="@gmail.com" pattern="^.+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-                        title="Achte auf RegExp" /></label>
+                <!-- wenn wie hier bei email kein title angegeben, kommt meldung von Browser wenn mit Maus drüber gefahren wird -->
+                <label for="inpEmail">EMAIL
+                    <input id="inpEmail" type="email" name="" value="@gmail.com"
+                        pattern="^.+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" title="Achte auf RegExp" />
+                </label>
 
                 <button onclick="showInputValue()">zeige die Eingabe</button>
                 <!-- <button type="button" onclick="showInputValue()">zeige die Eingabe</button> -->
@@ -50,29 +67,45 @@
         </section>
 
         <section>
-            <h1>input:color</h1>
-            <input type="color" name="clr" id="crlId" tabindex="3" />
+            <h2>input:color</h2>
+            <input id="crlId" type="color" name="clr" tabindex="3" />
+            <!-- button#id -->
+            <!-- <button id="btnColor" type="button">ok</button> -->
+            <!-- bei button wird angezeigt, dass email nicht angegeben ist -->
+            <!-- bei input wird meldung nicht angezeigt -->
+            <input id="btnColor" type="button" value=ok>
+            <output id="outpColor"></output>
+            <!-- output kommt immer in hexadezimal-Wert/Syntax als string rein (bspw.#5b51db) -->
+
+
 
             <hr />
         </section>
 
         <section>
-            <h1>input:radio</h1>
+            <h2>input:radio</h2>
             <h3>Matrixfrage links / rechts</h3>
+            <!-- nur eine Antwort ist möglich -->
+            <!-- name muss gleich geschrieben werden -->
             <p>Inputs von type radio sind durch Attr name verbunden</p>
             <div>
-                <label for="left">ADD INPUTS</label><input type="radio" id="left" value="left" name="additional" />
+                <label for="left">blau
+                    <input type="radio" id="left" value="left" name="additional" />
+                </label>
             </div>
             <div>
-                <label for="right">CONTINUE</label><input type="radio" id="right" value="right" name="additional" />
+                <label for="right">rot
+                    <input type="radio" id="right" value="right" name="additional" />
+                </label>
             </div>
             <output id="outRadio"></output>
             <hr />
         </section>
 
         <section>
-            <h1>input:checkbox</h1>
+            <h2>input:checkbox</h2>
             <h3>Pizzaextras</h3>
+            <!-- über name attribut alle miteinandere verknüpft; funktion unten -->
             <div>
                 <label for="cheese">Käse</label>
                 <input type="checkbox" id="cheese" name="inpCheck" value="Käse" />
@@ -95,12 +128,13 @@
         </section>
 
         <section>
-            <h1>input:range</h1>
+            <h2>input:range</h2>
             <h3>Hotelzimmerabfrage</h3>
             <div>
                 <label for="inpPrice">Zimmerpreis: </label>
                 <span id="minSpan"></span>
-                <input type="range" id="inpPrice" min="20" max="200" step="5" value="70" />
+                <!-- step = um welchen Wert wird sprunmäßig geändert? -->
+                <input id="inpPrice" type="range" min="20" max="200" step="5" value="70" />
                 <span id="maxSpan"></span>
                 <span>| Ihr ausgewählter Preis: </span>
                 <output id="outpPrice"></output>
@@ -109,7 +143,7 @@
         </section>
 
         <section>
-            <h1>min max & try catch</h1>
+            <h2>min max & try catch</h2>
             <p>
                 Beim Alter 7-16 - Kindermarathon, 17-65 - Marathon, 65-75 - Marathon mit
                 Zusatzversicherung, 75-... - Teilnahme nicht möglich
@@ -117,8 +151,10 @@
             <label for="inpAge">Ihr Alter:</label>
             <!-- Mit Attribut for bei Label und id bei input werden diese beiden 
                     Elemente verbunden. Beim Klicken auf label-Text erscheint Kursor im Input-Feld -->
-            <input type="number" id="inpAge" min="7" max="99" />
-            <button type="button" id="btnAge">OK</button>
+            <input id="inpAge" type="number" min="7" max="99" />
+            <button id="btnAge" type="button">OK</button>
+            <!-- evtl butten  je browser ändern  in input -->
+            <!-- <input id="btnAge" type="button" >OK -->
             <output id="outInfo"></output>
 
             <hr>
@@ -169,13 +205,18 @@
 
     <script>
         /* INPUT & DATALIST */
+        // wenn click-event vorkommt, musst du showCol (=eventhändler) nehmen/ausgeführt werden
         btn1.addEventListener("click", showCol)
         function showCol() {
+            // getElementByID = Objekt von Dokument
             let col = document.getElementById("inp1").value;
-            outp1.textContent = col;
+            // entweder
+            // outp1.textContent = col; 
+            // oder
+            document.getElementById('outp1').textContent = col;
         }
 
-        // RADIO
+
 
         // FIELDSET
         function showInputValue() {
@@ -184,12 +225,25 @@
             outp2.textContent = text;
         }
 
+        // input: color
+        btnColor.addEventListener('click', giveCol)
+        function giveCol() {
+            outpColor.innerText = crlId.value
+        }
+
+
+        // RADIO
+        // idee: wahl des benutzers abfragen
+
+
         // CHECKBOX
         btnPizza.addEventListener("click", getSelected, true);
         function getSelected() {
+            // outPizza wird auf leer gesetzt:
             outPizza.textContent = "";
             // console.log('hallo aus getSelected');
-            const extrasArr = document.getElementsByName("inpCheck"); // NodeList
+            // getElementsbyname = mehrere weil elemnt-s
+            const extrasArr = document.getElementsByName("inpCheck"); // NodeList = liste von Knoten
             console.log(extrasArr);
             // extrasArr.forEach(function (el) { return outPizza.innerText += el.checked; });
             extrasArr.forEach(el => {
@@ -207,7 +261,9 @@
             outpPrice.textContent = inpPrice.value;
         }
         inpPrice.addEventListener("input", showPrice);
-        // showPrice();
+        showPrice();
+
+
 
         // TRY CATCH FINALLY
 
