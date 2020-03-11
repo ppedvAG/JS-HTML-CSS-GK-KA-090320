@@ -99,7 +99,7 @@ js-forms.html
 ## M100 | CSS ADVANCED
 
 - [x] Position
-- [ ] Floating
+- [x] Floating
 - [x] Display: grid
 - [x] Display: flex
 - [ ] Column-Count
