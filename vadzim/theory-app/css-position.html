@@ -20,6 +20,12 @@
             /* 100 % von viewport height */
         }
 
+        #static {
+            position: static;
+            left: 50px;
+            /* static ignoriert top, right, bottom, left */
+        }
+
         #relative {
             /* pos:r */
             position: relative;
@@ -32,11 +38,13 @@
         #absolute {
             position: absolute;
             bottom: 20px;
+            /* orientiert sich an body-Maßen */
         }
 
         #fixed {
             position: fixed;
-            bottom: 0;
+            bottom: 20px;
+            left: 100px;
 
         }
 
@@ -44,7 +52,8 @@
             position: sticky;
             /* bottom: 200px; */
             /* bottom hat nicht funktioniert ??? */
-            top: 1000px;
+            top: 100px;
+            /* 100px von viewport Rand, darf aber nicht aus dem Elternelement raus */
             /* left & right werden ignoriert von sticky */
             right: 100px;
         }
@@ -57,12 +66,32 @@
 
 <body>
     <!-- (div[id=""]>lorem10)*5 -->
-    <div id="static">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.</div>
-    <div id="relative">Saepe vitae provident fuga modi temporibus ducimus, ipsum aliquid. Minima.</div>
-    <div id="absolute">Vel repellendus non dolor impedit minima! Vero expedita a ex!</div>
-    <div id="fixed">Dolore labore amet assumenda non accusamus, soluta sint quam quidem!</div>
+    <div id="static">
+        <h2>STATIC</h2>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, sequi.
+    </div>
+    <div id="relative">
+        <h2>RELATIVE</h2>
+        Saepe vitae provident fuga modi temporibus ducimus, ipsum aliquid. Minima.
+    </div>
+    <div id="absolute">
+        <h2>ABSOLUTE</h2>
+        Vel repellendus non dolor impedit minima! Vero expedita a ex!
+    </div>
+    <div id="fixed">
+        <h2>FIXED</h2>
+        Dolore labore amet assumenda non accusamus, soluta sint quam quidem!
+    </div>
+
     <div id="parentForSticky">
-        <div id="sticky">Sticky is here! Cumque rem itaque esse eveniet quaerat! Hic neque quas aliquam!</div>
+        parent von sticky
+        <div id="sticky">
+            <h2>STICKY</h2>
+            Sticky is here!
+            Cumque rem itaque esse eveniet quaerat! Hic neque quas aliquam!
+        </div>
+        <br>
+
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laborum, necessitatibus reprehenderit neque nihil
         ducimus voluptas pariatur iste dolorem id provident recusandae molestiae delectus minima nulla, quis nobis nam
         sit nisi a veniam laudantium. Quasi, aperiam non ullam sint vel molestias! Et vel ducimus nisi magni, accusamus
@@ -99,7 +128,8 @@
         necessitatibus nulla voluptatem? Ipsa dolorum maxime repellat sint fuga repudiandae ducimus molestiae, iusto
         asperiores facilis aut, provident mollitia tempore, perspiciatis amet ab pariatur veniam perferendis?
     </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis esse aut laudantium expedita eaque
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis esse aut laudantium expedita eaque
         voluptatibus aspernatur quae! Eveniet quia error ipsam magni ab quae corrupti optio, suscipit nesciunt libero
         possimus natus quod eum fugit, molestias numquam ipsa amet vitae. Possimus itaque libero voluptas quae modi
         commodi dicta ea. Alias, natus magni repellat unde, consectetur hic vitae ipsam praesentium sit nam placeat quas
@@ -112,7 +142,8 @@
         repellendus. Fuga tempore aperiam veritatis, laudantium necessitatibus corporis voluptatem. Commodi, quod?
         Debitis voluptatem eum voluptatum atque, quod iste? Fugiat facilis reiciendis necessitatibus ex officiis sint
         sequi, voluptate eveniet nostrum, vero, tenetur suscipit in. Iure itaque repellat voluptate recusandae quasi
-        consequatur nulla, dicta, commodi et molestias minus blanditiis ullam dolorem ab repellendus!</div>
+        consequatur nulla, dicta, commodi et molestias minus blanditiis ullam dolorem ab repellendus!
+    </div>
 
 
 </body>
