@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input {
+            width: 20%;
+            height: 2em;
+            /* outline-width: 10px; */
+        }
+        th, td {
+            border: thin solid;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    </style>
 </head>
+
 <body>
     <!-- 
         SZENARIO
@@ -14,6 +29,75 @@
         Der neue Benutzer macht das Gleiche und wir kriegen ein weiteres Objekt
         Alle Objekte werden im Array (quasi DB) gesammelt
      -->
-     
+    <input id=vname type="text" placeholder=VORNAME>
+    <input id=nname type="text" placeholder=NACHNAME>
+    <label for=inp_date>IHR GEBURTSDATUM<input type="date" id=inp_date></label>
+    <!-- durch label-for und input-id kann man die beiden verbinden -->
+
+    <button onclick="sendToDB(vname.value, nname.value, inp_date.value)">SEND</button>
+
+    <button onclick="showDB()">SHOW ALL</button>
+    <table id="dbTable"></table>
+
+
+    <script>
+        /*          function Person(fname, lname, gebDat) {
+                    this.fname = fname;
+                    this.lname = lname;
+                    this.gebDat = gebDat;
+                } */
+        class Person {
+            constructor(fname, lname, gebDat) {
+                if (fname != '')
+                    this.fname = fname;
+                if (lname != '')
+                    this.lname = lname;
+                if (gebDat != '')
+                    this.gebDat = gebDat;
+            }
+        }
+        // let persons = [] // literal
+        let persons = new Array() // Konstruktor
+        // let persons = [,,,] // 3 #todo
+
+        // console.log('persons.length :', persons.length);
+
+        function sendToDB(vn, nn, gd) {
+            let inputsVonBrowser = new Person(vn, nn, gd);
+            //  if (inputsVonBrowser.fname != '' &&  inputsVonBrowser.lname != '' && inputsVonBrowser.gebDat != '')
+            if (inputsVonBrowser.fname && inputsVonBrowser.lname && inputsVonBrowser.gebDat) {
+                persons.push(inputsVonBrowser)
+                console.log('persons :', persons);
+            } else {
+                console.log('Die Eingaben waren nicht korrekt');
+            }
+
+        }
+
+        function showDB() {
+            dbTable.innerHTML = `
+            <thead>
+                <tr>
+                    <th>vorname</th>
+                    <th>nachname</th>
+                    <th>geburtsdatum</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+
+            `
+            for (let item of persons) {
+                let newRow = tbody.insertRow();
+                newRow.insertCell().textContent = item.fname
+                newRow.insertCell().textContent = item.lname
+                newRow.insertCell().textContent = item.gebDat
+            }
+            // insertRow()
+            // insertCell()
+
+        }
+    </script>
+
 </body>
+
 </html>

@@ -75,11 +75,12 @@ css-selectors.html, css-box.html, css-units.html
 ## M70 | JS CONTINUED
 
 - [ ] Globales Objekt - window
-- [ ] Objekt-Typen
+- [x] Objekt-Typen
 - [x] Datenstrukturen
 - [x] Kontrollstrukturen
 - [x] Funktionen
-- [ ] Konstruktoren
+- [x] Konstruktoren
+- [x] date object
 
 ## M80 | DOM INTRO
 
