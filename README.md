@@ -69,12 +69,12 @@ css-selectors.html, css-box.html, css-units.html
 - [x] Display: block, inline, table, list
 - [ ] Spezifität
 - [ ] Pseudo-Klassen & -Elemente
-- [ ] Animationen & Transitions
-- [ ] Variable Fonts
+- [x] Animationen & Transitions
+- [x] Variable Fonts
 
 ## M70 | JS CONTINUED
 
-- [ ] Globales Objekt - window
+- [x] Globales Objekt - window
 - [x] Objekt-Typen
 - [x] Datenstrukturen
 - [x] Kontrollstrukturen

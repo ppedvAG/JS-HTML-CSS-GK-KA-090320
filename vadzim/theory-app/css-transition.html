@@ -8,19 +8,23 @@
     <style>
             div {
                 border: 2px solid black;
+                /* Anfangszustand ist direkt bei div angegeben */
                 width: 200px;
                 height: 200px;
                 margin: 50px auto;
+                /* bei transition kann man definieren, welche css-eigenschaften geändert werden sollen */
                 transition-property: width height;
-                transition-duration: 2s;
-                transition-delay: 500ms;
-                transition-timing-function:ease-out;/* ease-in, linear, ease, ... */
-                transition: transform 1s;
+                transition-duration: 3s;
+                transition-delay: 1000ms;
+                transition-timing-function:ease-out; /* ease-in, linear, ease, ... */
+                /* transition: transform 3s; */
+                /* mit der zweiten transition wurde die erste überschrieben ? #todo */
             }
             div:hover {
+                /* die geänderten Werte findet man bei einem event z.b. */
                 width: 400px;
                 height: 400px;
-                transform: rotateY(360deg) rotateX(120deg)/*  scale(1.5) */;
+                /* transform: rotateY(360deg) rotateX(120deg) scale(1.5); */
             }
         </style>
 </head>

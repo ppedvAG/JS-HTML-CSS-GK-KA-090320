@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS WINDOW</title>
+</head>
+<body>
+    <script>
+        console.log('window :', window);
+        /* () ist ein Operator, der die Funktionen gleich ausführt */
+        /* ohne () nur mit dem Bezeichner der Funktion können wir den Körper einer Funktion an eine andere übergeben */
+        this.onclick = myFunction;
+        function myFunction() {
+            console.log('window wurde geklickt');
+        }
+        /* da wir uns im Scope von Window grad befinden, 
+        kann man auf die Member von Window mit folgenden Schreibweisen zugreifen: */
+        // window.alert()
+        // this.alert()
+        // alert()
+
+        /* RETURN VON ALERT */
+        /* Alert wird genutzt, um den Benutzer zu benachrichtigen */
+        // let alertReturn = alert('hallo aus alert')
+        // console.log('alertReturn :', alertReturn); // undefined, die Fct liefert nichts zurück
+
+        /* RETURN VON PROMPT */
+        /* wird genutzt, um den Benutzer nach Eingabe zu fragen */
+        // let promptReturn = window.prompt('Geben Sie Ihr Alter ein')
+        // console.log('promptReturn :', promptReturn); // die Eingabe selbst
+
+        /* RETURN VON CONFIRM */
+        /* um ein OK vom Benutzer zu holen */
+        let confirmReturn = window.confirm('Halt die Schnauze')
+        console.log('confirmReturn :', confirmReturn) // true, wenn 'OK', false, wenn 'Abbrechen'
+
+    </script>
+</body>
+</html>
