@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js date object</title>
+</head>
+
+<body>
+
+    <output id="clock"></output>
+
+    <script>
+        /* Datum-Variable erstellen mit der globalen Funktion Date() */
+        let datumOhneKonstruktor = Date();
+        console.log(datumOhneKonstruktor); // 
+        console.log('typeof datumOhneKonstruktor :', typeof datumOhneKonstruktor); // string
+
+        let dateTest = Date.now();
+        console.log('dateTest :', dateTest); //1576159832757
+
+        let dateTest2 = Date;
+        console.log('dateTest2 : ', dateTest2); // function Date()
+
+        // console.log('dateTest2.toLocaleDateString() :', dateTest2.toLocaleDateString()); // not a function
+
+        /* Datum erstellen mit dem Konstruktor vom Objekt Date */
+        let datum = new Date();
+        console.log(typeof datum); // object
+
+        let rw;
+        //getDate()
+        rw = datum.getDate();
+        console.log(rw); // Monattag
+
+        //getDay()
+        rw = datum.getDay();
+        console.log(rw); // 4 bei Do      
+
+        //getHours()
+        console.log(datum.getHours()); // h
+
+        //getMinutes()
+        console.log(datum.getMinutes()); // mm
+
+        //getMonth()
+        console.log(datum.getMonth()); // 11 bei Dez, d.h. 0 bei Jan 
+
+        //getTime()
+        console.log(datum.getTime()); // ms seit 01.01.1970
+        console.log(Date.now()); // das gleiche
+
+        //getFullYear()
+        console.log(datum.getFullYear()); // yyyy
+
+        //toLocaleTimeString()
+        console.log(datum.toLocaleTimeString()); // hh:MM:ss
+
+        console.log(datum.toLocaleDateString()); // dd.mm.yyyy
+
+
+
+        /* ADVANCED | ANDERE METHODEN */
+        // getTimezoneOffset()        
+        // toLocaleDateString()
+        // setDate()
+        // setFullYear()
+        // setHours()
+        // setMinutes()
+        // setMonth()
+        // setSeconds()
+        // setTime()
+
+        /* EXERCISE */
+        // Übung Digitale Uhr
+        function tick() {
+            let date = new Date();
+            clock.textContent = date.toLocaleTimeString();
+        }
+        let intervalId = setInterval(() => {
+            tick();
+        }, 1000);
+        console.log('intervalId :', intervalId);
+        setTimeout(() => clearInterval(intervalId), 5000);
+
+    </script>
+</body>
+
+</html>
