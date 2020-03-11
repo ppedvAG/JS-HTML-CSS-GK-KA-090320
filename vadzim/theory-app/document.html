@@ -19,17 +19,22 @@
     <br>
     <button onclick=makeBig()>MAKE BIG</button>
     <script>
-
+        /* document.images */
         function makeBig() {
             console.log('document.images :', document.images);
             for (let item of document.images) {
                 let newSrc = item.src
-                newSrc = newSrc.substr(0, newSrc.length-3)
+                newSrc = newSrc.substr(0, newSrc.length - 3)
                 console.log('newSrc :', newSrc)
                 newSrc = newSrc.concat('200')
                 item.src = newSrc
             }
         }
+
+        // ########################################################
+        /* document methods */
+
+        // document.getElementById()
 
         // ########################################################
         /* wie viele Eigenschaften hat das Objekt document? */

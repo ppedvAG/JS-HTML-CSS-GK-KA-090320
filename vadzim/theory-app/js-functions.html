@@ -60,6 +60,24 @@
             return "summieren erfolgreich";
         }
 
+        // Anonyme Funktion
+        // werden gebraucht, wenn die Funktionen definiert 
+        // und an der gleichen Stelle ausgeführt werden sollen
+        setTimeout(function () {
+            console.log('Meldung nach 3 Sekunden');
+        }, 3000)
+
+        // Pfeilfunktion / Arrowfunction / Lambda
+        // sind andere Schreibweise für anonyme Funktionen
+        setTimeout(() => {
+            console.log('Meldung nach 4 Sekunden');
+        }, 4000)
+
+        // wenn es nur eine einzelne Anweisung in der Pfeilfunktion ist, 
+        // die geschweiften Kl. sind optional
+        setTimeout(() => console.log('Meldung nach 5 Sekunden'), 5000)
+
+
     </script>
 
 </body>

@@ -92,6 +92,40 @@
         <footer>footer</footer>
     </div>
 
+    <pre>
+        Unterschied zwischen div und section:
+        h1 in verschachtelten divs - sehen gleich auch,
+        h1 in verschachtelten sections werden angepasst 
+        (je tiefer die Verschachtelung, desto kleiner die h1)
+        Ps wurden aber nicht angepasst
+    </pre>
+    <body>
+        <h1>Heading 1</h1>
+        <div>
+            <h1>Heading 1</h1>
+            <div>
+                <h1>Heading 1</h1>
+                <div>
+                    <h1>Heading 1</h1>
+                </div>
+            </div>
+        </div>
+    
+        <h1>Heading 1</h1>
+        <p>Lorem, ipsum dolor.</p>
+        <section>
+            <h1>Heading 1</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <section>
+                <h1>Heading 1</h1>
+                <p>Lorem, ipsum dolor.</p>
+                <section>
+                    <h1>Heading 1</h1>
+                    <p>Lorem, ipsum dolor.</p>
+                </section>
+            </section>
+        </section>
+
 </body>
 
 </html>
