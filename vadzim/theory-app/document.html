@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
+    <img src="https://picsum.photos/id/1/100" alt="ein platzhalterbild">
+    <img src="https://picsum.photos/id/2/100" alt="ein platzhalterbild">
+    <img src="https://picsum.photos/id/3/100" alt="ein platzhalterbild">
+    <br>
+    <button onclick="makeBig()">MAKE BIG</button>
     <script>
+
+        function makeBig() {
+            console.log('document.images :', document.images);
+            for (let item of document.images) {
+                item.src
+            }
+
+        }
+
         
+
+
+
+
+        // ########################################################
+        /* wie viele Eigenschaften hat das Objekt document? */
         console.info('document hat folgendes in sich:');
         //console.dir(document);
 
-        /* wie viele Eigenschaften hat das Objekt document? */
         let i = 1;
-        for (const el in document) {                        
-            console.log(i++ + '. ' + el);  // 260          
+        for (const el in document) {
+            console.log(i++ + '. ' + el);  // 263          
         }
 
         /* wie viele Eigenschaften davon beinhalten Methoden??? */
-        i = 1;
-        for (const el in document) {
-            console.log(typeof el[i++]); // string 11, undefined 249 ???
-        }
-    
+        /*         i = 1;
+                for (const el in document) {
+                    console.log(typeof el[i++]); // string 11, undefined 249 ???
+                } */
+
     </script>
 </body>
+
 </html>
