@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js-objects</title>
+    <style>
+        #outp {
+        font-size: 2em;
+    }
+    </style>
+    
+</head>
+<body>
+    <label for="inp1">VORNAME: <input type="text" id="inp1"></label>
+    <label for="inp2">NACHNAME: <input type="text" id="inp2"></label>
+    <label for="inp3">ALTER: <input type="number" id="inp3"></label>
+    <button onclick="createPerson()">ADD</button>
+    <br>
+    <output id="outp"></output>
+
+    <script>
+        function Person(fname, lname, age) {
+            this.fname = fname;
+            this.lname = lname;
+            this.age = age;
+        }
+
+        var newPerson;
+        function createPerson() {
+            newPerson = new Person(inp1.value, inp2.value, inp3.value);
+            console.log(newPerson);
+            for (let prop in newPerson){
+                outp.textContent += newPerson[prop];
+            }
+            
+        }
+
+        
+    
+    </script>
+    
+</body>
+</html>

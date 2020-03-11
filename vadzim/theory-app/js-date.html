@@ -13,13 +13,14 @@
     <output id="clock"></output>
 
     <script>
+        /* Kein Literal für Datum in JS */
         /* Datum-Variable erstellen mit der globalen Funktion Date() */
         let datumOhneKonstruktor = Date();
         console.log(datumOhneKonstruktor); // 
         console.log('typeof datumOhneKonstruktor :', typeof datumOhneKonstruktor); // string
 
         let dateTest = Date.now();
-        console.log('dateTest :', dateTest); //1576159832757
+        console.log('dateTest :', dateTest); // 1 583 912 745 475
 
         let dateTest2 = Date;
         console.log('dateTest2 : ', dateTest2); // function Date()
