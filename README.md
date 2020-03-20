@@ -84,15 +84,15 @@ css-selectors.html, css-box.html, css-units.html
 
 ## M80 | DOM INTRO
 
-- [ ] Zusammenhang zwischen DOM, HTML, CSS & JS
-- [ ] DOM Knoten & Elemente
+- [x] Zusammenhang zwischen DOM, HTML, CSS & JS
+- [x] DOM Knoten & Elemente
 - [ ] Events
-- [ ] Navigieren in DOM - Traversing
+- [x] Navigieren in DOM - Traversing
 
 ## M90 | HTML INTERMEDIATE
 
 - [ ] Multimedia - Bilder, Audio, Video, Canvas
-- [ ] Formulare
+- [x] Formulare
 
 js-forms.html
 
