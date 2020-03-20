@@ -18,6 +18,8 @@ ppedv AG, Vadzim Naumchyk
 
 ![html-logo](html-images/html-logo.png)
 
+<img src="html-images/html-logo.png" alt="html-logo" height="300" centered/>
+
 ## HTML > GETTING STARTED
 
 ### HTML > GETTING STARTED > IDEA OF HTML
