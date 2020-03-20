@@ -1,5 +1,5 @@
-# HTML
-<!-- Kommentare übergehen nicht in die PDF -->
+# THEORIE VON HTML, PPEDV EDITION
+<!-- Kommentare übergehen nicht in die PDF-Datei -->
 <!--
 PFLEGEN DIESER FOLIEN
 * Überschriften vereinheitlichen (check 06.01.2020)
@@ -16,9 +16,11 @@ PFLEGEN DIESER FOLIEN
 
 ppedv AG, Vadzim Naumchyk
 
+![html-logo](html-images/html-logo.png)
+
 ## HTML > GETTING STARTED
 
-### IDEA OF HTML
+### HTML > GETTING STARTED > IDEA OF HTML
 
 WAS IST HTML
 
@@ -30,6 +32,7 @@ WAS IST HTML
 WOZU IST HTML
 
 - Zuständig für die Struktur der Seite
+- Markierungen (Markup) für die Struktur sind die HTML-Tags
 - Plattformübergreifend
 - Bilder, Links, Formulare, etc.
 
@@ -86,6 +89,48 @@ PREPARATION REMARKS
   - open in browser
   - auto rename tag
   - evtl. Prettier
+
+<!--
+IN-COURSE REMARKS
+
+---------------------------------------------------------
+PREPARATION REMARKS
+
+??? auto complete tag benennt die schließenden Tags nicht um
+(evtl auch auto complete tag und auto close tag)
+
+Prettier löscht beim Formatieren die leeren Zeilen
+default Formatter - vscode.html
+
+klicken auf install, dann reload
+
+??? css formatter - was macht diese Erweiterung ?
+??? was ist default oder built-in formatter für css, html und js ?
+ -->
+
+### HTML > GETTING STARTED > LAB
+
+html-helloworld.html
+
+<!--
+IN-COURSE REMARKS
+html-helloworld.html wird später zu index.html. Deswegen nur das einbauen, was später auch gebraucht wird. Alles andere, was man am Anfang zeigen möchte, in der der Datei html-syntax.html zeigen.
+
+Ein erstes HTML5-Dokument
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML</title>
+    </head>
+    <h1>Ich bin ein HTML5-Dokument</h1>
+    <p class=beispiel>  Hallo!
+    <p>
+        Ich bin ein HTML5-Dokument!
+
+---------------------------------------------------------
+PREPARATION REMARKS
+
+ -->
 
 ## HTML > SYNTAX
 
