@@ -22,6 +22,8 @@ Ein Kurs von PPEDV AG :rocket:
 - [x] Stile einer Webseite: CSS
 - [x] Verhalten einer Webseite: JS
 
+[HTML > GETTING STARTED](https://github.com/ppedvAG/JS-HTML-CSS-GK-KA-090320/blob/master/vadzim/theory-app/slides/HTML.md#html--getting-started)
+
 [hello-html.html](./vadzim/theory-app/hello-html.html)
 
 [hello-css.css](./vadzim/theory-app/hellocss.css)

@@ -16,9 +16,9 @@ PFLEGEN DIESER FOLIEN
 
 ppedv AG, Vadzim Naumchyk
 
-![html-logo](html-images/html-logo.png)
+<!-- ![html-logo](html-images/html-logo.png) -->
 
-<img src="html-images/html-logo.png" alt="html-logo" height="300" centered/>
+<img src="html-images/html-logo.png" alt="html-logo" height="300"/>
 
 ## HTML > GETTING STARTED
 
@@ -135,6 +135,16 @@ PREPARATION REMARKS
  -->
 
 ## HTML > SYNTAX
+
+### HTML > SYNTAX > TAGS
+
+### HTML > SYNTAX > ATTRIBUTES
+
+### HTML > SYNTAX > IDENTIFIERS
+
+### HTML > SYNTAX > STRINGS
+
+### HTML > SYNTAX > LAB
 
 ## HTML & EMMET / ZEN CODING
 
