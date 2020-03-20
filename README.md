@@ -16,17 +16,27 @@ Ein Kurs von PPEDV AG :rocket:
 - [x] VS Code
 - [x] Git & GitHub
 
-## M10 | JS, HTML, CSS GETTING STARTED
+## M10 | HTML GETTING STARTED
 
-- [x] Struktur einer Webseite: HTML
+- [x] [MD: html getting started (browser link)](https://github.com/ppedvAG/JS-HTML-CSS-GK-KA-090320/blob/master/vadzim/theory-app/slides/HTML.md#html--getting-started) [(vscode link)](./vadzim/theory-app/slides/HTML.md#html--getting-started)
+
+<!-- - [x] [MD: html getting started (vscode link)]() -->
+
+[html-helloworld.html](./vadzim/theory-app/html-helloworld.html)
+
+
+
+## | CSS GETTING STARTED
+
 - [x] Stile einer Webseite: CSS
+
+[css-helloworld.css](./vadzim/theory-app/css-hellowohhhgrld.css)
+
+
+
+## | JS GETTING STARTED
+
 - [x] Verhalten einer Webseite: JS
-
-[HTML > GETTING STARTED](https://github.com/ppedvAG/JS-HTML-CSS-GK-KA-090320/blob/master/vadzim/theory-app/slides/HTML.md#html--getting-started)
-
-[hello-html.html](./vadzim/theory-app/hello-html.html)
-
-[hello-css.css](./vadzim/theory-app/hellocss.css)
 
 ## M20 | HTML INTRO
 
