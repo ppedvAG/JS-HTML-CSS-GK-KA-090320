@@ -176,6 +176,8 @@ oder so wie ein Start-Tag (Version HTML5)
 <br>
 ```
 
+Obwohl ein Start-Tag und End-Tag ein Paar bilden, sind also zwei Tags, werden sie zusammen auch einfach ein HTML-Tag genannt. Z.B. das Paar `<p></p>` werden als p-Tag genannt. Die Mehrheit von HTML-Tags sind Tagspaare.
+
 ### HTML > SYNTAX > ATTRIBUTES
 
 ### HTML > SYNTAX > IDENTIFIERS

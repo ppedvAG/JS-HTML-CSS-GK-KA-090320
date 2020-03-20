@@ -39,7 +39,7 @@ Ein Kurs von PPEDV AG :rocket:
 
 - [x] Mark-Up Elemente - Tags
 - [x] Tags-Eigenschaften - Attribute
-- [x] HTML Syntax
+- [x] [HTML Syntax in html.md](./vadzim/theory-app/slides/HTML.md#html--syntax)
 - [x] Content Types
 
 html-tags.html
