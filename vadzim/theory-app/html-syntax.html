@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
+
 <head>
+    <!-- Tag für den Kopfteil des Dokumentes -->
+    <!-- zusätzliche/Meta-Daten für Browser -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html-syntax</title>
+    <title>html-syntax</title> <!-- Dokumententitel -->
     <link rel="stylesheet" href="css-syntax.css">
 </head>
+
 <body>
+    <!-- Tag für den Hauptteil des Dokumentes -->
+    <!-- Inhalt für den Benutzer kommt ins body -->
     <h1>html-syntax</h1>
 
-    Hello World!
-    I'm learning HTML!
-    <!-- schau in devtools, wie dieser text vom browser interpretiert wurde : "..." -->
     <!-- Kommentar für mich -->
 
     <!-- shift alt a für kommentare -->
@@ -22,15 +25,25 @@
     <h1>Heading Range 1</h1>
     <h2>Heading Range 2</h2>
     <h6>Heading Range 6</h6>
+    <p>Ich bin Vadzim,
+
+        <span>35</span>.</p>
+    <h2>Inhalt von HTML-Elementen</h2>
+
+    <img src="https://picsum.photos/id/10/200" alt="ein unwichtiges Bild">
+
+    <!-- noch ein runtergeladenes Bild über img angeigen lassen -->
+
+    <!-- und links -->
 
     <p>paragraph</p>
-
+    <!-- Tag für einen Paragraphen -->
     <!-- Syntax von HTML-Tags: -->
     <sometag>text to render in browser</sometag>
     <!-- Die Browser rendern auch das, was sie nicht kennen.
     unbekannte Elemente sind inline (siehe border und sometag in devtools vom browser) -->
 
-    
+
     <br>
     <!-- br steht für break, bedeutet new line, hat keinen schließenden Tag -->
 
@@ -46,7 +59,7 @@
 
     <!-- Syntax von HTML Attributen: -->
     <!-- attributname="attributwert" -->
-    
+
 
     <h3>p.innerText</h3>
     <p id="par_iT"></p>
@@ -58,6 +71,7 @@
     <output id="out_v"></output>
 
     <script src="js-syntax.js"></script>
-    
+
 </body>
+
 </html>

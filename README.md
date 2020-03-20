@@ -18,13 +18,10 @@ Ein Kurs von PPEDV AG :rocket:
 
 ## M10 | HTML GETTING STARTED
 
-- [x] [MD: html getting started (browser link)](https://github.com/ppedvAG/JS-HTML-CSS-GK-KA-090320/blob/master/vadzim/theory-app/slides/HTML.md#html--getting-started) [(vscode link)](./vadzim/theory-app/slides/HTML.md#html--getting-started)
-
-<!-- - [x] [MD: html getting started (vscode link)]() -->
-
-[html-helloworld.html](./vadzim/theory-app/html-helloworld.html)
-
-
+- [x] [html.md](./vadzim/theory-app/slides/HTML.md#html--getting-started)
+- [x] [html-helloworld.html](./vadzim/theory-app/html-helloworld.html)
+- [x] browser developer tools
+<!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
 
 ## | CSS GETTING STARTED
 

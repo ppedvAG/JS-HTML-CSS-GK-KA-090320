@@ -138,6 +138,44 @@ PREPARATION REMARKS
 
 ### HTML > SYNTAX > TAGS
 
+Von der Syntax her gibt es 5 Arten von HTML-Tags:
+
+1. Kommentare
+
+```html
+<!-- html kommentar -->
+```
+
+2. Doctype-Tag
+
+```html
+<!DOCTYPE>
+```
+
+3. Start-Tag aus einem Tag-Paar
+
+```html
+<button>
+```
+
+4. End-Tag aus einem Tag-Paar
+
+```html
+</button>
+```
+
+5. ein alleinstehender Tag (Version HTML4)
+
+```html
+<br/>
+```
+
+oder so wie ein Start-Tag (Version HTML5)
+
+```html
+<br>
+```
+
 ### HTML > SYNTAX > ATTRIBUTES
 
 ### HTML > SYNTAX > IDENTIFIERS
