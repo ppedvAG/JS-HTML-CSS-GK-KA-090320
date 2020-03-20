@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>css-transition</title>
+    <title>CSS TRANSITION</title>
     <style>
-            div {
+            #demo_div {
                 border: 2px solid black;
                 /* Anfangszustand ist direkt bei div angegeben */
                 width: 200px;
                 height: 200px;
                 margin: 50px auto;
                 /* bei transition kann man definieren, welche css-eigenschaften geändert werden sollen */
-                transition-property: width height;
+                /* transition-property: width height;
                 transition-duration: 3s;
                 transition-delay: 1000ms;
-                transition-timing-function:ease-out; /* ease-in, linear, ease, ... */
+                transition-timing-function:ease-out; */ /* ease-in, linear, ease, ... */
                 /* transition: transform 3s; */
-                /* mit der zweiten transition wurde die erste überschrieben ? #todo */
+                /* mit der zweiten transition wurde die erste überschrieben */
             }
-            div:hover {
+            #demo_div:hover {
                 /* die geänderten Werte findet man bei einem event z.b. */
-                width: 400px;
-                height: 400px;
-                /* transform: rotateY(360deg) rotateX(120deg) scale(1.5); */
+                /* width: 400px;
+                height: 400px; */
+                transform: rotateY(360deg) rotateX(120deg) scale(1.5);
             }
         </style>
 </head>
 <body>
-    <div>transition</div>
+
+    <h1>CSS TRANSITION</h1>
+
+
+    <div id=demo_div>transition</div>
 </body>
 </html>

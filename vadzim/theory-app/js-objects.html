@@ -11,9 +11,12 @@
             height: 2em;
             /* outline-width: 10px; */
         }
-        th, td {
+
+        th,
+        td {
             border: thin solid;
         }
+
         table {
             border-collapse: collapse;
         }
@@ -56,11 +59,7 @@
                     this.gebDat = gebDat;
             }
         }
-        // let persons = [] // literal
         let persons = new Array() // Konstruktor
-        // let persons = [,,,] // 3 #todo
-
-        // console.log('persons.length :', persons.length);
 
         function sendToDB(vn, nn, gd) {
             let inputsVonBrowser = new Person(vn, nn, gd);
@@ -71,7 +70,6 @@
             } else {
                 console.log('Die Eingaben waren nicht korrekt');
             }
-
         }
 
         function showDB() {
@@ -84,7 +82,6 @@
                 </tr>
             </thead>
             <tbody id="tbody"></tbody>
-
             `
             for (let item of persons) {
                 let newRow = tbody.insertRow();
@@ -92,9 +89,6 @@
                 newRow.insertCell().textContent = item.lname
                 newRow.insertCell().textContent = item.gebDat
             }
-            // insertRow()
-            // insertCell()
-
         }
     </script>
 

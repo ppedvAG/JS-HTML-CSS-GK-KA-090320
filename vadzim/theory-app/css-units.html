@@ -64,32 +64,10 @@
             padding: 1vmax;
             border-radius: 1vmax;
         }
-
-        /* mehr zu border und border-radius */
-        #kreis {
-            background-color: blue;
-            border: thin solid;
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-        }
-        #quadrat {
-            background-color: blue;
-            /* border ist eine Abkürzung für: */
-            border-width: 100px;
-            border-style: groove;
-            border-color: gray;
-            width: 200px;
-            height: 200px;
-            box-sizing: border-box;
-        }
-
     </style>
 </head>
 <body>
     <h1>CSS GRÖßENEINHEITEN</h1>
-
-    
 
     <!-- ((div[id=""]>h2+p>lorem10)+(hr))*8 -->
     <div id="pixel">
@@ -104,6 +82,11 @@
     <hr>
     <div id="em">
         <h2>em</h2>
+        <pre>
+            Der Begriff kommt aus der Typografie und bedeutet dort ungefähr die Breite der Letter für großes M oder W oder die Breite von zwei Nullen.
+            Im Gegensatz zu em für 'breite' Buchstaben gibt es in Typografie noch die Größeneinheit en. 
+            In Web ist 1em gleich der Schriftgröße von body. Default-Wert bei bodys Schriftgröße ist 16px.
+        </pre>
         <p>Dolorem natus voluptatibus possimus tempora iusto ex consectetur odio fugit.</p>
     </div>
     <hr>
@@ -132,7 +115,5 @@
         <p>Illo nemo rerum corrupti. Natus libero optio praesentium inventore obcaecati!</p>
     </div>
     <hr>
-    <div id="kreis"></div>
-    <div id="quadrat"></div>
 </body>
 </html>

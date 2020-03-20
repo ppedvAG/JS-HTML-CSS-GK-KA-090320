@@ -8,6 +8,10 @@
 </head>
 
 <body>
+    <h1>JS VARIABLEN</h1>
+
+    <p>siehe Konsole</p>
+
     <script>
         // VARIABLEN DEFINIEREN
         // im Fall mit Variablen heißt es Deklarieren
@@ -15,6 +19,13 @@
         var y; // 
         let x;
         // t; // Fehler
+
+
+        // IDENTIFIER / BEZEICHNER
+        // dürfen nicht mit einer Zahl anfangen
+        // let 1let;
+        // let 2;
+        // weil der Compiler die Zahlen nach einem Leerzeichen versucht als number zu interpretieren
         
 
         // Deklarieren + Initialisieren
@@ -26,6 +37,10 @@
 
         // es geht auch ohne Stichwort        
         t = 5;
+
+        // debugger
+        // Schauen Sie nach: Variablen mit Schlüsselwort var und ohne Schlüsselwort sind Props von window
+        // Variablen mit Schlüsselwort let sind im scope script aufgelistet
         
         // ####################################################
         // VARIABLEN NUTZEN        
@@ -37,6 +52,10 @@
         // ####################################################
         // SCOPES
         // Gültigkeitsbereich von var
+        console.info('TEST 1')
+        {
+            
+        }
         var a = 2;
         console.log("a vor {}: ", a);
         {
@@ -45,6 +64,24 @@
             console.log("a in {} nach a=4: ", a);
         }
         console.log("a nach {}: ", a);
+        
+        console.info('TEST 2')
+        function test2Fct1() {
+            var2 = 5
+            var var3 = 5
+        }
+        
+        test2Fct1()
+        function test2Fct2() {
+                console.log('var2 : ', var2) // wenn man test2Fct1 nicht aufruft, dann ist auch diese Variable not defined (manche Quellen behaupten: Variablen ohne Keyword, sind global sichtbar sogar wenn sie innerhalb von Funktionen deklariert sind)
+                console.log('var3 : ', var3) // var3 is not defined
+        }
+        // debugger 
+        
+        test2Fct2() 
+        // js-variables.html:56 Uncaught ReferenceError: var2 is not defined
+        // at test2Fct2 (js-variables.html:56)
+        // at js-variables.html:62
 
         // Gültigkeitsbereich von let
         let b = 2;

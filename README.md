@@ -89,14 +89,14 @@ css-selectors.html, css-box.html, css-units.html
 - [ ] Events
 - [ ] Navigieren in DOM - Traversing
 
-## M90 | HTML ADVANCED
+## M90 | HTML INTERMEDIATE
 
 - [ ] Multimedia - Bilder, Audio, Video, Canvas
 - [ ] Formulare
 
 js-forms.html
 
-## M100 | CSS ADVANCED
+## M100 | CSS INTERMEDIATE
 
 - [x] Position
 - [x] Floating
@@ -106,6 +106,6 @@ js-forms.html
 - [ ] Media Queries & Breakpoints
 - [ ] CSS Funktionen
 
-## M120 | JS ADVANCED
+## M120 | JS INTERMEDIATE
 
 - [ ] offene Themen nach Bedarf der Teilnehmerinnen

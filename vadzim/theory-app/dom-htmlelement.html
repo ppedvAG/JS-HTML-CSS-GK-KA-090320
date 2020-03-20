@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM HTMLElement</title>
+</head>
+
+<body>
+    <h1>DOM Interface für HTML-Elemente 'HTMLElement'</h1>
+
+    <h2>Unterschied zw. innerText und textContent</h2>
+    <pre>
+        als setter sind beide Eigenschaften gleich
+        als getter liefert innerText bei nicht gerenderten Elementen nichts
+        als getter liefert textContent bei nicht gerenderten Elementen immernoch den Inhalt des Elements
+    </pre>
+    <p id="par_i" style="visibility: hidden;"><i>italic text in hidden paragraph</i></p>
+
+    <h3>Links zum Nachschlagen</h3>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText">MDN innerText</a>
+
+    <script>
+        let htmlElement = document.getElementById('par_i')
+        console.log('htmlElement.innerText :', htmlElement.innerText);
+        console.log('htmlElement.textContent :', htmlElement.textContent);
+    </script>
+
+</body>
+
+</html>
