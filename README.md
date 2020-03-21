@@ -16,37 +16,38 @@ Ein Kurs von PPEDV AG :rocket:
 - [x] VS Code
 - [x] Git & GitHub
 
-## M10 | HTML GETTING STARTED
+## M01 | HTML GETTING STARTED
 
-- [x] [html.md](./vadzim/theory-app/slides/HTML.md#html--getting-started)
+- [x] [html.md getting started](./vadzim/theory-app/slides/HTML.md#html--getting-started)
 - [x] [html-helloworld.html](./vadzim/theory-app/html-helloworld.html)
-- [x] browser developer tools
 <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
+- [x] browser developer tools > elements
 
-## | CSS GETTING STARTED
+## M02 | CSS GETTING STARTED
 
-- [x] Stile einer Webseite: CSS
+- [x] [css.md getting started](./vadzim/theory-app/slides/CSS.md#css--getting-started)
+- [ ] [css-helloworld.css](./vadzim/theory-app/css-helloworld.css)
+<!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
+- [x] browser developer tools > style
 
-[css-helloworld.css](./vadzim/theory-app/css-hellowohhhgrld.css)
+## M03 | JS GETTING STARTED
 
+- [x] [js.md getting started](./vadzim/theory-app/slides/JS.md#js--getting-started)
+- [ ] [js-helloworld.js](./vadzim/theory-app/js-helloworld.js)
+<!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
+- [x] browser developer tools > console
 
+## M20 | HTML SYNTAX
 
-## | JS GETTING STARTED
+- [ ] [html.md - HTML Syntax](./vadzim/theory-app/slides/HTML.md#html--syntax)
+- [ ] [html-entities.html](./vadzim/theory-app/html-entities.html)
+- [ ] [html-tags.html](./vadzim/theory-app/html-tags.html)
+- [ ] [html-syntax.html](./vadzim/theory-app/html-syntax.html)
+- [ ] [html-attributes-global.html](./vadzim/theory-app/html-attributes-global.html)
 
-- [x] Verhalten einer Webseite: JS
+## Übung: Homepage mit verlinkten Unterseiten
 
-## M20 | HTML INTRO
-
-- [x] Mark-Up Elemente - Tags
-- [x] Tags-Eigenschaften - Attribute
-- [x] [HTML Syntax in html.md](./vadzim/theory-app/slides/HTML.md#html--syntax)
-- [x] Content Types
-
-html-tags.html
-
-Übung: Homepage mit verlinkten Unterseiten
-
-## M30 | CSS INTRO
+## M30 | CSS SYNTAX
 
 - [x] Emmet
 - [x] CSS-Regeln - Deklarationen
@@ -59,7 +60,7 @@ css-selectors.html, css-box.html, css-units.html
 
 Übung: Container in jeder HTML-Datei
 
-## M40 | JS INTRO
+## M40 | JS SYNTAX
 
 - [x] Primitive Datentypen
 - [x] Variablen
@@ -69,6 +70,7 @@ css-selectors.html, css-box.html, css-units.html
 
 ## M50 | HTML CONTINUED
 
+- [x] Content Types
 - [x] Navigation einer Webseite
 - [x] Inhalt gruppieren - Sectioning, Headings & Co
 - [x] Daten strukturieren - HTML Tabellen & Listen
