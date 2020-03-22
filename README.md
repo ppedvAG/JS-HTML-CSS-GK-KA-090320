@@ -19,27 +19,24 @@ Ein Kurs von PPEDV AG :rocket:
 ## M01 | HTML GETTING STARTED
 
 - [x] [html.md getting started](./vadzim/theory-app/slides/HTML.md#html--getting-started)
-- [x] [html-helloworld.html](./vadzim/theory-app/html-helloworld.html)
-<!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
+- [x] [html-helloworld.html](./vadzim/theory-app/html-helloworld.html) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
 - [x] browser developer tools > elements
 
 ## M02 | CSS GETTING STARTED
 
 - [x] [css.md getting started](./vadzim/theory-app/slides/CSS.md#css--getting-started)
-- [ ] [css-helloworld.css](./vadzim/theory-app/css-helloworld.css)
-<!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
+- [ ] [css-helloworld.css](./vadzim/theory-app/css-helloworld.css) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
 - [x] browser developer tools > style
 
 ## M03 | JS GETTING STARTED
 
 - [x] [js.md getting started](./vadzim/theory-app/slides/JS.md#js--getting-started)
-- [ ] [js-helloworld.js](./vadzim/theory-app/js-helloworld.js)
-<!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
+- [ ] [js-helloworld.js](./vadzim/theory-app/js-helloworld.js) <!-- Beim ersten Mal klick einfach auf den Link, um die Datei anzulegen -->
 - [x] browser developer tools > console
 
-## M20 | HTML SYNTAX
+## M04 | HTML SYNTAX
 
-- [ ] [html.md - HTML Syntax](./vadzim/theory-app/slides/HTML.md#html--syntax)
+- [ ] [HTML.md - HTML Syntax](./vadzim/theory-app/slides/HTML.md#html--syntax)
 - [ ] [html-entities.html](./vadzim/theory-app/html-entities.html)
 - [ ] [html-tags.html](./vadzim/theory-app/html-tags.html)
 - [ ] [html-syntax.html](./vadzim/theory-app/html-syntax.html)
@@ -47,20 +44,15 @@ Ein Kurs von PPEDV AG :rocket:
 
 ## Übung: Homepage mit verlinkten Unterseiten
 
-## M30 | CSS SYNTAX
+## M05 | CSS SYNTAX
 
-- [x] Emmet
-- [x] CSS-Regeln - Deklarationen
-- [x] Selektoren
-- [x] CSS-Eigenschaften
-- [x] CSS Box
-- [x] CSS-Größeneinheiten
+- [ ] [CSS.md - CSS Syntax](./vadzim/theory-app/slides/CSS.md#css--syntax)
+- [ ] [css-syntax.css](./vadzim/theory-app/css-syntax.css)
+- [ ] [css-properties.html](./vadzim/theory-app/css-properties.html)
+- [x] [css-selectors.html](./vadzim/theory-app/css-selectors.html)
+- [x] [css-units.html](./vadzim/theory-app/css-units.html)
 
-css-selectors.html, css-box.html, css-units.html
-
-Übung: Container in jeder HTML-Datei
-
-## M40 | JS SYNTAX
+## M06 | JS SYNTAX
 
 - [x] Primitive Datentypen
 - [x] Variablen
@@ -68,6 +60,10 @@ css-selectors.html, css-box.html, css-units.html
 - [x] Ausdrücke & Anweisungen
 - [x] Gültigkeitsbereiche
 
+
+- [x] Emmet
+css-box.html
+Übung: Container in jeder HTML-Datei
 ## M50 | HTML CONTINUED
 
 - [x] Content Types

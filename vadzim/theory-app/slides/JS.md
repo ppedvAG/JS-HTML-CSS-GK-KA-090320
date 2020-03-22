@@ -125,3 +125,5 @@ https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome
 https://github.com/prettier/prettier
 https://prettier.io/
  -->
+
+[zurück zu readme.md (vscode link)](../../../README.md#m03--js-getting-started)

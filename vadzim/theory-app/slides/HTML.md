@@ -112,7 +112,8 @@ klicken auf install, dann reload
 
 ### HTML > GETTING STARTED > LAB
 
-html-helloworld.html
+[zurück zu readme.md (pdf or browser link)](https://github.com/ppedvAG/JS-HTML-CSS-GK-KA-090320#m01--html-getting-started)
+[zurück zu readme.md (vscode link)](../../../README.md#m01--html-getting-started)
 
 <!--
 IN-COURSE REMARKS
@@ -146,31 +147,17 @@ Von der Syntax her gibt es 5 Arten von HTML-Tags:
 4. ein alleinstehender Tag `<br/>` oder `<br />` (Version HTML4) oder einfach `<br>` (Version HTML5, so wie ein Start-Tag)
 5. Kommentar-Tag `<!-- kommentar vom web-entwickler -->` (auch quasi alleinstehend)
 
-Obwohl ein Start-Tag und ein End-Tag zwei Tags sind, werden sie zusammen auch einfach nur als HTML-Tag genannt. Z.B. das Paar `<p></p>` werden als p-Tag genannt. Die Mehrheit von HTML-Tags sind Tagspaare. Alleinstehende Tags sind etwas seltener. Und Doctype-Tag trifft man nur einmal pro eine HTML-Datei.
+Obwohl ein Start-Tag und ein End-Tag zwei Tags sind, werden sie zusammen auch einfach nur als HTML-Tag genannt. Z.B. das Paar `<p></p>` werden als p-Tag bezeichnet. Die Mehrheit von HTML-Tags sind Tagspaare. Alleinstehende Tags sind etwas seltener. Und Doctype-Tag trifft man nur einmal pro eine HTML-Datei.
 
 ### HTML > SYNTAX > TAG-CONTENT, STRINGS, ENTITIES
 
-Ein Tag-Paar besteht aus zwei Teilen, um dazwischen noch irgendwelcheren Inhalt einzuschließen. Welcher Inhalt es ist, hängt vom jeweiligen Tag ab. Meistens sieht man als Inhalt Text (String) oder weitere HTML-Tags.
+Ein Tag-Paar besteht aus zwei Teilen, um dazwischen noch irgendwelchen Inhalt einzuschließen. Welcher Inhalt es ist, hängt vom jeweiligen Tag ab. Meistens sieht man als Inhalt Text (String) oder weitere HTML-Tags.
 
 Wenn es String ist, dann sind hier alle Zeichen ohne Bedenken zu benutzen außer diejenigen, die für HTML-Parser von besonderer Bedeutung sind. Und nämlich die spitzen Klammern. Mit denen muss man vorsichtig sein, nicht dass ein neuer unerwünschter Tag angelegt wird.
 
 Will man aber genau die spitzen Klammern im Browser rendern lassen, kann man Sign-Entities benutzen. Vllt kennt das jemand auch aus Word. Z.B. `&lt;` wird gerendert als `<`.
 
-Siehe `html-syntax.html, Syntax von Tags`.
-
-### HTML > SYNTAX > ATTRIBUTES & IDENTIFIERS
-
-Durch Hinzufügen eines HTML-Tags in einer HTML-Datei wird vom Browser in seinem Speicher ein HTML-Element angelegt. Das ist ein komplexes Objekt mit viiiiiiielen Eigenschaften. Wie z.B. Id-Bezeichner, Höhe, Breite, ob es draggable ist, Relation zu anderen Tags u.v.m.
-
-Viele von diesen Eigenschaften bleiben einfach leer. Sie sind dafür da, um dem Web-Entwickler die Möglichkeit zu geben, diese Eigenschaften mit eigenen Werten zu befüllen.
-
-Einige von diesen Eigenschaften bekommen sofort die Werte, die einem HTML-Element von Anfang an eigen sind. Wie z.B. die Schriftgröße bei den Überschriften erster Ordnung (h1) - sie ist zweimal größer als die bei normalen Text-Absätzen (Paragraphen).
-
-Die Eigenschaften von HTML-Elementen können ihre Werte z.B. über HTML-Attribute bekommen.
-
-Siehe `html-syntax.html, Syntax von Attributen`.
-
-
+Weitere Informationen direkt in html-syntax.html, damit Du die Code-Beispiele auch direkt austesten kannst. [zurück zu readme.md (vscode link)](../../../README.md#m04--html-syntax)
 
 ## HTML & EMMET / ZEN CODING
 

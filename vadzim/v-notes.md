@@ -51,9 +51,9 @@ Bemerkung: Page (wie auf den Tasten PageUp und PageDown) ist Anzahl von Zeilen, 
 | shortcut | effect |
 | --- | --- |
 | `ctrl l` | select line |
-| `shift alt up/down` | duplicate line / selection |
+| `shift alt up/down` | duplicate line or selection |
 | `ctrl c ctrl v` | duplicate line |
-| `alt up/down` | move line |
+| `alt up/down` | move line or selection |
 | `shift alt cursor` | edit many lines |
 | `ctrl leftclick` | go to definition |
 | `ctrl ö` | open terminal |
@@ -68,7 +68,7 @@ Bemerkung: Page (wie auf den Tasten PageUp und PageDown) ist Anzahl von Zeilen, 
 | `ctrl -` | zoom out |
 | `ctrl shift p` | show all commands |
 
-## VSCODE JS SNIPPETS
+## VSCODE EXTENSION ES SNIPPETS
 
 | snippet | effect |
 | --- | --- |
