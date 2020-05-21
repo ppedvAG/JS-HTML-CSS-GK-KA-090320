@@ -116,3 +116,8 @@ js-forms.html
 ## M120 | JS INTERMEDIATE
 
 - [ ] offene Themen nach Bedarf der Teilnehmerinnen
+
+
+https://www.ppedv.de/schulung/kurse/JavaScript-HTML-Programmierung-Client-CSS-Syntax-Event-Cookie.aspx
+
+Javascript HTML Css PPEDV AG Weiterbildung Schulung Kurs Training
